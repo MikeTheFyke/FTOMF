@@ -1,8 +1,12 @@
 
-var minimum = window.innerHeight -150;
-var maximum = window.innerHeight;
-console.log(maximum)
+// var minimum = window.innerHeight -150;
+// var maximum = window.innerHeight;
 
-var randomNumberGenerator = [...Array(10)].map(() => (Math.floor(Math.random() * (maximum - minimum + 1)) + minimum)-50);
+var minimum = 1;
+var maximum = 3;
 
-TweenMax.to('#header-container', 1, {opacity: 1, y: randomNumberGenerator, delay: 2}) ;
+// var randomNumberGenerator = [...Array(10)].map(() => (Math.floor(Math.random() * (maximum - minimum + 1)) + minimum));
+var randomNumberGenerator = (Math.random() * (maximum - minimum + 1)) + minimum;
+console.log(randomNumberGenerator)
+
+TweenMax.to('#header-container', randomNumberGenerator, {opacity: 1, y: window.innerHeight - 100, delay: 1}) ;
