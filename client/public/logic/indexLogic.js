@@ -1,5 +1,5 @@
 
-var minimum = 1;
+var minimum = window.innerHeight -150;
 var maximum = window.innerHeight;
 console.log(maximum)
 
