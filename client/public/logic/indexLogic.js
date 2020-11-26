@@ -2,12 +2,15 @@
 // var minimum = window.innerHeight -150;
 // var maximum = window.innerHeight;
 
-// var minimum = 0.1;
-// var maximum = 2;
+var minimum = 1;
+var maximum = 2.5;
 
-// var randomNumberGenerator = [...Array(10)].map(() => (Math.floor(Math.random() * (maximum - minimum + 1)) + minimum));
+var randomNumberGenerator = [...Array(2)].map(() => (Math.random() * (maximum - minimum + 1)) + minimum);
 // var randomNumberGenerator = (Math.random() * (maximum - minimum + 1)) + minimum;
-// console.log(randomNumberGenerator)
+
+randomNumberGenerator[0] = randomNumberGenerator[0].toFixed(2);
+console.log(randomNumberGenerator[0]
+console.log(randomNumberGenerator[1])
 
 /// header element 1
 TweenMax.to('#header-container', 2.5, { y: window.innerHeight - 100, delay: 1, ease: Bounce.easeOut }) ;
