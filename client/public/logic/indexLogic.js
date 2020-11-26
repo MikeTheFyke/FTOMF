@@ -11,14 +11,12 @@ var randomNumberGenerator = [...Array(2)].map(() => (Math.random() * (maximum - 
 for (var i = 0; i < randomNumberGenerator.length; i++){
     randomNumberGenerator[i] = randomNumberGenerator[i].toFixed(2);    
 }
-// randomNumberGenerator[0] = randomNumberGenerator[0].toFixed(2);
-// randomNumberGenerator[1] = randomNumberGenerator[1].toFixed(2);
 
 console.log(randomNumberGenerator[0])
 console.log(randomNumberGenerator[1])
 
 /// header element 1
-TweenMax.to('#header-container', 2.5, { y: window.innerHeight - 100, delay: 1, ease: Bounce.easeOut }) ;
+TweenMax.to('#header-container', randomNumberGenerator[0], { y: window.innerHeight - 100, delay: 1, ease: Bounce.easeOut }) ;
 
 TweenMax.to('#foot-shadow', 0, {scaleY: 0, scaleX: 0})
 TweenMax.to('#foot-shadow', 1.05, {scaleY: 0.5, scaleX: 1, delay: 1})
