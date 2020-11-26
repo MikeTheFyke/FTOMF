@@ -19,6 +19,14 @@
     text-align: center;
 }
 
+#header-element2{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background-image: linear-gradient(red, black);
+    text-align: center;
+}
+
 #deer-link{
     color: white;
     font-size: 15px;
