@@ -10,6 +10,11 @@ app.get("/", (req, res) => {
     res.render("index");
 });
 
+/// Index (Home) Route
+app.get("/deerhunt", (req, res) => {
+  res.render("deerhunt");
+});
+
 app.listen(PORT, () => {
   console.log(`Example app listening on port ${PORT}!`);
 });
