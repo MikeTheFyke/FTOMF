@@ -8,8 +8,11 @@ var maximum = 2.5;
 var randomNumberGenerator = [...Array(2)].map(() => (Math.random() * (maximum - minimum + 1)) + minimum);
 // var randomNumberGenerator = (Math.random() * (maximum - minimum + 1)) + minimum;
 
-randomNumberGenerator[0] = randomNumberGenerator[0].toFixed(2);
-randomNumberGenerator[1] = randomNumberGenerator[1].toFixed(2);
+for (var i = 0; i < randomNumberGenerator.length; i++){
+    randomNumberGenerator[i] = randomNumberGenerator[i].toFixed(2);    
+}
+// randomNumberGenerator[0] = randomNumberGenerator[0].toFixed(2);
+// randomNumberGenerator[1] = randomNumberGenerator[1].toFixed(2);
 
 console.log(randomNumberGenerator[0])
 console.log(randomNumberGenerator[1])
