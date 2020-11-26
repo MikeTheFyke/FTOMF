@@ -16,6 +16,12 @@
     height: 100px;
     border-radius: 50px;
     background-image: linear-gradient(red, black);
+    text-align: center;
+}
+
+#deer-link{
+    margin-top: 20px;
+    color: white;
 }
 
 #footer-container{
