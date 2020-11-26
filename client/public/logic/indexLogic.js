@@ -21,8 +21,10 @@ TweenMax.to('#foot-shadow', 0.20, {scaleY: 0.5, scaleX: 1, delay: 3.30})
 
 document.getElementById('header-element').addEventListener('mouseover', function(){
     TweenMax.to('#header-element', 1.5, { y: -25, scale: 1.5, ease: Elastic.easeOut.config(1, 0.3) } );
+    TweenMax.to('#foot-shadow', 1.5, { scaleY: .75, scaleX: 1.25, ease: Elastic.easeOut.config(1, 0.3) } );
 });
 
 document.getElementById('header-element').addEventListener('mouseout', function(){
     TweenMax.to('#header-element', 1.5, { y:0, scale: 1, ease: Elastic.easeOut.config(1, 0.3) } );
+    TweenMax.to('#foot-shadow', 1.5, { scaleY: .5, scaleX: 1, ease: Elastic.easeOut.config(1, 0.3) } );
 });
