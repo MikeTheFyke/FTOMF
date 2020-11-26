@@ -16,7 +16,7 @@ TweenMax.to('#foot-shadow', 1.05, {scaleY: 0.5, scaleX: 1, delay: 1})
 TweenMax.to('#foot-shadow', 0.5, {scaleY: 0.25, scaleX: 0.75, delay: 2.05})
 TweenMax.to('#foot-shadow', 0.5, {scaleY: 0.5, scaleX: 1, delay: 2.55})
 TweenMax.to('#foot-shadow', 0.25, {scaleY: 0.25, scaleX: 0.75, delay: 3.05})
-TweenMax.to('#foot-shadow', 0.25, {scaleY: 0.5, scaleX: 1, delay: 3.30})
+TweenMax.to('#foot-shadow', 0.20, {scaleY: 0.5, scaleX: 1, delay: 3.30})
 
 // TweenMax.to('#foot-shadow', 0.5, {scaleY: 0.75, delay: 1.5})
 // TweenMax.to('#foot-shadow', 0.5, {scaleY: 0.5, delay: 2.25})
