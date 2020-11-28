@@ -10,9 +10,14 @@ app.get("/", (req, res) => {
     res.render("index");
 });
 
-/// Index (Home) Route
+/// Deer Hunter Route
 app.get("/deerhunt", (req, res) => {
   res.render("deerhunt");
+});
+
+/// Tunnel Route
+app.get("/tunnel", (req, res) => {
+  res.render("tunnel");
 });
 
 app.listen(PORT, () => {
