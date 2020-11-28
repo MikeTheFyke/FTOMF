@@ -2,35 +2,45 @@
     position: absolute;
     top: 0px;
     left: 0px;
-    height: 100vh;
+    height: 200vh;
     width: 100%;
 }
 
 #sky-image{
-    height: 200px;
+    position: absolute;
+    top: 0px;
+    height: 400px;
     width: 100%;
     background-color: lightblue;
 }
 
 #mountain-image{
+    position: fixed;
+    top: 400px;
     height: 200px;
     width: 100%;
     background-color: burlywood;
 }
 
 #forest-image{
+    position: fixed;
+    top: 600px;
     height: 200px;
     width: 100%;
     background-color: green;
 }
 
 #field-image{
+    position: fixed;
+    top: 800px;
     height: 200px;
     width: 100%;
     background-color: beige;
 }
 
 #grass-image{
+    position: fixed;
+    top: 1000px;
     height: 200px;
     width: 100%;
     background-color: greenyellow;
