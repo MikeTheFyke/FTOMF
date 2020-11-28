@@ -1,23 +1,35 @@
 #parallax-container{
-
+    position: absolute;
+    top: 0px;
+    left: 0px;
 }
 
 #sky-image{
-
+    height: 200px;
+    width: 100%;
+    background-color: lightblue;
 }
 
 #mountain-image{
-
+    height: 200px;
+    width: 100%;
+    background-color: burlywood;
 }
 
 #forest-image{
-    
+    height: 200px;
+    width: 100%;
+    background-color: green;
 }
 
 #field-image{
-
+    height: 200px;
+    width: 100%;
+    background-color: beige;
 }
 
 #grass-image{
-
+    height: 200px;
+    width: 100%;
+    background-color: greenyellow;
 }
