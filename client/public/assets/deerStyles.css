@@ -16,9 +16,9 @@
 
 #mountain-image1{
     position: absolute;
-    top: 400px;
+    top: 200px;
     left: 30%;
-    height: 700px;
+    height: 1000px;
     width: 500px;
     background-color: #9eb6b8;
 }
@@ -26,18 +26,18 @@
 #mountain-image2{
     position: absolute;
     top: 400px;
-    left: 0px;
-    height: 700px;
-    width: 500px;
+    left: -100px;
+    height: 800px;
+    width: 800px;
     background-color: #4b959c;
 }
 
 #mountain-image3{
     position: absolute;
     top: 400px;
-    right: 0px;
+    right: -100px;
     height: 700px;
-    width: 500px;
+    width: 800px;
     background-color: #547073;
 }
 
