@@ -17,10 +17,28 @@
 #mountain-image1{
     position: absolute;
     top: 400px;
+    left: 30%;
+    height: 700px;
+    width: 500px;
+    background-color: #9eb6b8;
+}
+
+#mountain-image2{
+    position: absolute;
+    top: 400px;
     left: 0px;
     height: 700px;
     width: 500px;
-    background-color: burlywood;
+    background-color: #4b959c;
+}
+
+#mountain-image3{
+    position: absolute;
+    top: 400px;
+    right: 0px;
+    height: 700px;
+    width: 500px;
+    background-color: #547073;
 }
 
 #forest-image{
