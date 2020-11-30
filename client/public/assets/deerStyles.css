@@ -41,10 +41,34 @@
     background-color: #547073;
 }
 
-#forest-image{
-    position: fixed;
-    top: 600px;
-    height: 200px;
+#forest-image1{
+    position: absolute;
+    top: 700px;
+    height: 800px;
+    width: 100%;
+    background-color: green;
+}
+
+#forest-image2{
+    position: absolute;
+    top: 700px;
+    height: 800px;
+    width: 100%;
+    background-color: green;
+}
+
+#forest-image3{
+    position: absolute;
+    top: 700px;
+    height: 800px;
+    width: 100%;
+    background-color: green;
+}
+
+#forest-image4{
+    position: absolute;
+    top: 700px;
+    height: 800px;
     width: 100%;
     background-color: green;
 }
