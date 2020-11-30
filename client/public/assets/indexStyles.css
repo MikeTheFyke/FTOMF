@@ -29,6 +29,14 @@
     text-align: center;
 }
 
+#header-element3{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background-image: linear-gradient(salmon, black);
+    text-align: center;
+}
+
 .header-link{
     color: white;
     font-size: 15px;
@@ -58,6 +66,13 @@
 }
 
 #foot-shadow2{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background-image: radial-gradient(black, black, white, white);
+}
+
+#foot-shadow3{
     width: 100px;
     height: 100px;
     border-radius: 50px;
