@@ -14,11 +14,12 @@
     background-color: lightblue;
 }
 
-#mountain-image{
-    position: fixed;
+#mountain-image1{
+    position: absolute;
     top: 400px;
-    height: 200px;
-    width: 100%;
+    left: 0px;
+    height: 700px;
+    width: 500px;
     background-color: burlywood;
 }
 
