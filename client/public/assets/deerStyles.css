@@ -44,32 +44,36 @@
 #forest-image1{
     position: absolute;
     top: 700px;
-    height: 800px;
-    width: 100%;
+    left: 75px;
+    height: 50px;
+    width: 50px;
     background-color: green;
 }
 
 #forest-image2{
     position: absolute;
-    top: 700px;
-    height: 800px;
-    width: 100%;
+    top: 725px;
+    left: 62.5px;
+    height: 75px;
+    width: 75px;
     background-color: green;
 }
 
 #forest-image3{
     position: absolute;
-    top: 700px;
-    height: 800px;
-    width: 100%;
+    top: 750px;
+    left: 50px;
+    height: 100px;
+    width: 100px;
     background-color: green;
 }
 
 #forest-image4{
     position: absolute;
-    top: 700px;
-    height: 800px;
-    width: 100%;
+    top: 785px;
+    left: 50px;
+    height: 100px;
+    width: 100px;
     background-color: green;
 }
 
