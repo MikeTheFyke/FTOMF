@@ -23,57 +23,12 @@
     background-color: #9eb6b8;
 }
 
-#mountain-image2{
-    position: absolute;
-    top: 400px;
-    left: -100px;
-    height: 800px;
-    width: 800px;
-    background-color: #4b959c;
-}
-
-#mountain-image3{
-    position: absolute;
-    top: 400px;
-    right: -100px;
-    height: 700px;
-    width: 800px;
-    background-color: #547073;
-}
-
 #forest-image1{
     position: absolute;
     top: 650px;
     left: 75px;
     height: 50px;
     width: 50px;
-    background-color: green;
-}
-
-#forest-image2{
-    position: absolute;
-    top: 675px;
-    left: 62.5px;
-    height: 75px;
-    width: 75px;
-    background-color: green;
-}
-
-#forest-image3{
-    position: absolute;
-    top: 625px;
-    left: 50px;
-    height: 100px;
-    width: 100px;
-    background-color: green;
-}
-
-#forest-image4{
-    position: absolute;
-    top: 735px;
-    left: 50px;
-    height: 100px;
-    width: 100px;
     background-color: green;
 }
 
