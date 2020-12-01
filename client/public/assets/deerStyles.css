@@ -29,16 +29,15 @@
 }
 
 #field-image{
-    position: fixed;
-    top: 600px;
-    height: 200px;
+    position: absolute;
+    top: 700px;
+    height: 500px;
     width: 100%;
-    background-color: beige;
 }
 
 #grass-image{
-    position: fixed;
-    top: 800px;
+    position: absolute;
+    top: 1200px;
     height: 200px;
     width: 100%;
     background-color: greenyellow;
