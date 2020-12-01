@@ -17,18 +17,16 @@
 #mountain-image1{
     position: absolute;
     top: 200px;
-    left: 30%;
-    height: 1000px;
-    width: 500px;
+    height: 200px;
+    width: 100%;
     background-color: #9eb6b8;
 }
 
 #forest-image1{
     position: absolute;
     top: 650px;
-    left: 75px;
-    height: 50px;
-    width: 50px;
+    height: 200px;
+    width: 100%;
     background-color: green;
 }
 
