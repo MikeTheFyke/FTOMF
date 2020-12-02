@@ -22,7 +22,7 @@
 
 #forest-image1{
     position: absolute;
-    top: 500px;
+    top: 700px;
     left: -125px;
     height: 800px;
     width: 125%;
@@ -30,8 +30,8 @@
 
 #field-image{
     position: absolute;
-    top: 700px;
-    height: 500px;
+    top: 900px;
+    height: 700px;
     width: 100%;
 }
 
