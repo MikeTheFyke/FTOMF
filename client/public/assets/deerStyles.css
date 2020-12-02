@@ -13,11 +13,12 @@
     width: 100%;
 }
 
-#mountain-image1{
+#mountain-image{
     position: absolute;
     top: 500px;
     height: 800px;
     width: 100%;
+    opacity: 0;
 }
 
 #forest-image1{
