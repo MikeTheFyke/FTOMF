@@ -52,4 +52,6 @@
     text-decoration: none;
     color: white;
     font-family: 'Montserrat', sans-serif;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #c9c9c9;
 }
