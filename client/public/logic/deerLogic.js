@@ -12,3 +12,7 @@ document.getElementById('home-link').addEventListener('mouseover', function(){
 document.getElementById('home-link').addEventListener('mouseout', function(){
     TweenMax.to('#home-link', 1, { scale: 1, x: 0, ease: Elastic.easeOut.config(1, 0.3) })
 });
+
+document.getElementById('grass02').addEventListener('mouseover', function(){
+    TweenMax.to('#deer-image', 1, { scaleY: 1, transformOrigin: "bottom center" })
+});
