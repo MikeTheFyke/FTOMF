@@ -46,10 +46,18 @@
 
 #deer-image{
     position: absolute;
-    top: 1200px;
+    top: 1100px;
     right: 20px;
     height: 600px;
     width: 400px;
+}
+
+#grass01{
+    position: absolute;
+    top: 1250px;
+    right: -100px;
+    height: 400px;
+    width: 800px;
 }
 
 #home-link{
