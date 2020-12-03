@@ -23,7 +23,7 @@
 
 #forest-image1{
     position: absolute;
-    top: 1050px;
+    top: 950px;
     left: -125px;
     height: 900px;
     width: 125%;
@@ -42,6 +42,14 @@
     height: 600px;
     width: 100%;
     background-color: green;
+}
+
+#deer-image{
+    position: absolute;
+    top: 1200px;
+    right: 20px;
+    height: 600px;
+    width: 400px;
 }
 
 #home-link{
