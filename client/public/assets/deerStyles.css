@@ -54,10 +54,18 @@
 
 #grass01{
     position: absolute;
-    top: 1250px;
+    top: 1200px;
     right: -100px;
-    height: 400px;
+    height: 300px;
     width: 800px;
+}
+
+#grass02{
+    position: absolute;
+    bottom: -100px;
+    left: -600px;
+    height: 1200px;
+    width: 1400px;
 }
 
 #home-link{
