@@ -90,6 +90,7 @@
     border-radius: 50px;
     border-color: red;
     border-style: solid;
+    transform: scale(0);
 }
 
 /* 
