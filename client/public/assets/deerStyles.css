@@ -80,6 +80,18 @@
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #c9c9c9;
 }
+
+#deer-sensor{
+    position: absolute;
+    bottom: 0px;
+    left: 10%;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border-color: red;
+    border-style: solid;
+}
+
 /* 
 #parallax-container {
     max-height: 200vh;
