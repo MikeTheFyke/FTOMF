@@ -83,8 +83,8 @@
 
 #deer-sensor{
     position: absolute;
-    bottom: 5%;
-    left: 10%;
+    bottom: 25%;
+    right: 35%;
     width: 100px;
     height: 100px;
     border-radius: 50px;
