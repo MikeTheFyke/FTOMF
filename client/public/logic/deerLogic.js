@@ -2,6 +2,8 @@ TweenMax.to('#home-link', 0, { x: "-100vw" })
 TweenMax.to('#home-link', 2, { x: 0, delay: 1 })
 TweenMax.to('#deer-image', 0, { scaleY: 0})
 
+TweenMax.to('#deer-sensor', 1, { scale: 1, yoyo: 1, repeat: -1})
+
 TweenMax.to('#mountain-image', 4, { opacity: 1, delay: 1 })
 
 document.getElementById('home-link').addEventListener('mouseover', function(){
