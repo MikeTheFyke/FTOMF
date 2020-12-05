@@ -91,15 +91,17 @@
     border-color: white;
     border-style: solid;
     transform: scale(0);
+    text-align: center;
 }
 
 #deer-sensor{
     width: 100px;
     height: 100px;
     border-radius: 50px;
-    border-color: red;
+    border-color: #aebed6;
     border-style: solid;
     transform: scale(0);
+    margin: auto;
 }
 
 /* 
