@@ -20,6 +20,11 @@ app.get("/tunnel", (req, res) => {
   res.render("tunnel");
 });
 
+/// Solar Route
+app.get("/solar", (req, res) => {
+  res.render("solar");
+});
+
 app.listen(PORT, () => {
   console.log(`Example app listening on port ${PORT}!`);
 });
