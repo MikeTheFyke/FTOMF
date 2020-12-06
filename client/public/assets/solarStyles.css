@@ -16,5 +16,8 @@
 }
 
 #earth-map{
+    position: relative;
+    top: 0px;
+    left: -800px;
     height: 100%;
 }
