@@ -9,7 +9,7 @@ TweenMax.to("#terra-beta", {
         path:[ { x: 95, y: 5 },
                { x: 190, y:0 },
                { x: 95, y:5 },
-               { x: 0, y:5 },
+               { x: 0, y:0 },
              ],
 curviness: 1
 }, 
@@ -20,7 +20,7 @@ TweenMax.to("#terra-beta2", {
         path:[ { x: 95, y: 5 },
                { x: 190, y:0 },
                { x: 95, y:5 },
-               { x: 0, y:5 },
+               { x: 0, y:0 },
              ],
 curviness: 1
 }, 
