@@ -25,6 +25,12 @@
 #terra-beta{
     width: 20px;
     height: 20px;
-    border-radius: 10px;
+    border-radius: 20px;
+    border-color: black;
+    border-style: solid;
     overflow: hidden;
+}
+
+#moon-map{
+    height: 100%;
 }
