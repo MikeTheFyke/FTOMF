@@ -38,3 +38,20 @@
 #moon-map{
     height: 100%;
 }
+
+#terra-beta2{
+    position: inherit;
+    top: 20px;
+    left: 40%;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    border-color: black;
+    border-style: solid;
+    border-width: thin;
+    overflow: hidden;
+}
+
+#moon-map2{
+    height: 100%;
+}
