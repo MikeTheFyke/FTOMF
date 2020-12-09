@@ -3,10 +3,14 @@ var terraStatus = false;
 gsap.to("#terra-container", 0, { y: "-455px", scale: 0.20 })
 
 function terraEnlarge(){
-    // if (terraStatus = false){
-
-    //     terraStatus = true;
-    //     console.log(terraStatus)
+    if ( terraStatus = false ){
+        terraStatus = true;
+        console.log(terraStatus)
+    }
+    else if ( terraStatus = true ){
+        terraStatus = false;
+        console.log(terraStatus)
+    }
 
     gsap.to("#terra-container", 2, { y: 0, scale: 1 })
 
@@ -41,9 +45,4 @@ function terraEnlarge(){
     master.add(earthMap, terraBeta, terraBeta2)
         // .add(terraBeta)
         // .add(terraBeta2);
-    
-    // }
-    // else if ( terraStatus = true){
-    //     terraStatus = false;
-    // }
 }
