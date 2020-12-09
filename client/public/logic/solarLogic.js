@@ -1,5 +1,3 @@
-
-
 var earthMap = new TimelineMax();
 
 earthMap.to("#earth-map", 5, { x: "500px", repeat: -1, ease: "Linear.easeInOut" });
