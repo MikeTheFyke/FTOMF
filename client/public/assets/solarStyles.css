@@ -66,11 +66,14 @@
 }
 
 #terra-button{
-    width: 50px;
-    height: 50px;
-    border-radius: 5px;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
     margin: 0px auto;
     z-index: 4;
     background-color: transparent;
     outline: none;
+    border-style: double;
+    border-width:5px; 
+    border-color: black;
 }
