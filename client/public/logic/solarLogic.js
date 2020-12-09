@@ -1,8 +1,8 @@
-gsap.to("#terra-container", 0, { y: "-400px" })
+gsap.to("#terra-container", 0, { y: "-460px", scale: 0.20 })
 
 
 function terraEnlarge(){
-    gsap.to("#terra-container", 2, { y: 0 })
+    gsap.to("#terra-container", 2, { y: 0, scale: 1 })
 
     var earthMap = new TimelineMax();
     earthMap.to("#earth-map", 5, { x: "500px", repeat: -1, ease: "Linear.easeInOut" });
