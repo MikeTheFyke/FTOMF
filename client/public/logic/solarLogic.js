@@ -28,6 +28,10 @@ curviness: 1
 }, 
 duration: 5, repeat: -1, ease: "Linear.easeInOut" });
 
+function terraEnlarge(){
+
+}
+
 var master = new TimelineMax();
 master.add(earthMap, terraBeta, terraBeta2)
     // .add(terraBeta)
