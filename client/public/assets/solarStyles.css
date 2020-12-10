@@ -11,7 +11,7 @@
 #mercury-map{
     position: relative;
     top: 0px;
-    left: -800px;
+    left: -400px;
     height: 100%;
 }
 
@@ -28,7 +28,7 @@
 #venus-map{
     position: relative;
     top: 0px;
-    left: -800px;
+    left: -400px;
     height: 100%;
 }
 
