@@ -1,3 +1,37 @@
+#mercury-container{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    border-color: black;
+    border-style: solid;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#mercury-map{
+    position: relative;
+    top: 0px;
+    left: -800px;
+    height: 100%;
+}
+
+#venus-container{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    border-color: black;
+    border-style: solid;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#venus-map{
+    position: relative;
+    top: 0px;
+    left: -800px;
+    height: 100%;
+}
+
 #terra-container{
     position: absolute;
     top: 40%;
