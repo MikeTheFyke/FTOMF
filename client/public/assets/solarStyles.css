@@ -1,3 +1,20 @@
+#sun-container{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    border-color: black;
+    border-style: solid;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#sun-map{
+    position: relative;
+    top: 0px;
+    left: -400px;
+    height: 100%;
+}
+
 #mercury-container{
     width: 200px;
     height: 200px;
