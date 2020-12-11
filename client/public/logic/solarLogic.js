@@ -6,6 +6,8 @@ gsap.to("#venus-container", 0, { y: "-505px", x:"25.5vw", scale: 0.20 })
 
 gsap.to("#terra-container", 0, { y: "-455px", x:"15vw",scale: 0.20 })
 
+gsap.to("#mars-container", 0, { y: "-455px", x:"5vw", scale: 0.20 })
+
 function terraEnlarge(){
     if ( terraStatus = false ){
         terraStatus = true;
