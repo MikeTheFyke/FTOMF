@@ -1,10 +1,10 @@
 var terraStatus = false;
 
-gsap.to("#sun-container", 0, { y: "-100px", x:"45vw", scale: 0.20 })
-gsap.to("#mercury-container", 0, { y: "-300px", x:"36vw", scale: 0.20 })
-gsap.to("#venus-container", 0, { y: "-500px", x:"26vw", scale: 0.20 })
+gsap.to("#sun-container", 0, { y: "-90px", x:"45.5vw", scale: 0.20 })
+gsap.to("#mercury-container", 0, { y: "-298px", x:"35.75vw", scale: 0.20 })
+gsap.to("#venus-container", 0, { y: "-505px", x:"25.5vw", scale: 0.20 })
 
-gsap.to("#terra-container", 0, { y: "-455px", x:"16vw",scale: 0.20 })
+gsap.to("#terra-container", 0, { y: "-455px", x:"15vw",scale: 0.20 })
 
 function terraEnlarge(){
     if ( terraStatus = false ){
