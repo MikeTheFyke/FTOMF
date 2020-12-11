@@ -147,10 +147,10 @@
     height: 100%;
 }
 
-#mars-diemos{
+#mars-deimos{
     position: inherit;
     top: 60px;
-    left: 40%;
+    left: 37%;
     width: 20px;
     height: 20px;
     border-radius: 20px;
@@ -160,7 +160,7 @@
     overflow: hidden;
 }
 
-#diemos-map{
+#deimos-map{
     height: 100%;
 }
 
