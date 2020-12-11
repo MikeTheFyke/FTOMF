@@ -106,6 +106,29 @@
 #moon-map2{
     height: 100%;
 }
+#mars-container{
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    height: 300px;
+}
+
+#mars-alpha{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    border-color: black;
+    border-style: solid;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#mars-map{
+    position: relative;
+    top: 0px;
+    left: -400px;
+    height: 100%;
+}
 
 #terra-button-container{
     position: absolute;
