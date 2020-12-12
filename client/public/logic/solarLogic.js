@@ -7,8 +7,8 @@ gsap.to("#venus-container", 0, { y: "-505px", x:"25.5vw", scale: 0.20 })
 gsap.to("#terra-container", 0, { y: "-455px", x:"15vw",scale: 0.20 })
 
 gsap.to("#mars-container", 0, { y: "-455px", x:"5vw", scale: 0.20 })
-gsap.to("#saturn-container", 0, { y: "-455px", x:"-2vw", scale: 0.20 })
-gsap.to("#jupiter-container", 0, { y: "-455px", x:"-15vw", scale: 0.20 })
+gsap.to("#saturn-container", 0, { y: "-710px", x:"-4vw", scale: 0.20 })
+gsap.to("#jupiter-container", 0, { y: "-915px", x:"-14vw", scale: 0.20 })
 
 function terraEnlarge(){
     if ( terraStatus = false ){
