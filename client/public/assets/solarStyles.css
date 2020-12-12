@@ -232,6 +232,23 @@
     height: 100%;
 }
 
+#pluto-container{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    border-color: black;
+    border-style: solid;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#pluto-map{
+    position: relative;
+    top: 0px;
+    left: -400px;
+    height: 100%;
+}
+
 #terra-button-container{
     position: absolute;
     top: 10px;
