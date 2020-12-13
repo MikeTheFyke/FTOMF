@@ -103,3 +103,9 @@ document.getElementById('mars-container').addEventListener('click', function () 
         console.log(marsStatus)
     }
 })
+
+document.getElementById('sun-container').addEventListener('click', function () {
+
+
+
+})
