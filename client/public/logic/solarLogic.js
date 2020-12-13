@@ -60,6 +60,8 @@ document.getElementById('terra-container').addEventListener('click', function ()
 
 document.getElementById('mars-container').addEventListener('click', function () {
 
+    if ( marsStatus === false ){
+    marsStatus = true;
     gsap.to("#mars-container", 2, { y: 0, scale: 1 })
 
     var marsMap = new TimelineMax();
@@ -94,4 +96,10 @@ document.getElementById('mars-container').addEventListener('click', function () 
         curviness: 1
         }, 
         duration: 5, ease: "Linear.easeInOut", repeat: -1, opacity: 0 });
+    }
+    else if ( marsStatus === true ){
+        marsStatus = false;
+        gsap.to("#mars-container", 2, { y: "-455px", x:"5vw", scale: 0.20 })
+        console.log(marsStatus)
+    }
 })
