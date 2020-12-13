@@ -64,5 +64,5 @@ document.getElementById('mars-container').addEventListener('click', function () 
 
     var marsMap = new TimelineMax();
     marsMap.to("#mars-map", 5, { x: "400px", repeat: -1, ease: "Linear.easeInOut" });
-
+    marsMap.to("#phobos-map", 5, { x: "40px", repeat: -1, ease: "Linear.easeInOut" });
 })
