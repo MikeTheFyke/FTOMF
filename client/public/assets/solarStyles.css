@@ -164,6 +164,9 @@
 }
 
 #deimos-map{
+    position: relative;
+    top: 0px;
+    left: -50px;
     height: 100%;
 }
 

@@ -79,4 +79,19 @@ document.getElementById('mars-container').addEventListener('click', function () 
         curviness: 1
         }, 
         duration: 5, ease: "Linear.easeInOut", repeat: -1, opacity: 0 });
+
+    var deimosMap = new TimelineMax();
+    deimosMap.to("#deimos-map", 5, { x: "40px", repeat: -1, ease: "Linear.easeInOut" });
+    
+    var deimosMove = new TimelineMax();
+    deimosMove.to("#mars-deimos", {
+        motionPath: {
+            path:[ { x: 150, y: 10 },
+                { x: 300, y: 0 },
+                { x: 150, y: 10 },
+                { x: 0, y: 0 },
+                ],
+        curviness: 1
+        }, 
+        duration: 5, ease: "Linear.easeInOut", repeat: -1, opacity: 0 });
 })
