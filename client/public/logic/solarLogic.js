@@ -11,7 +11,7 @@ gsap.to("#uranus-container", 0, { y: "-1125px", x:"-24vw", scale: 0.20 })
 gsap.to("#neptune-container", 0, { y: "-1329px", x:"-34vw", scale: 0.20 })
 gsap.to("#pluto-container", 0, { y: "-1535px", x:"-44vw", scale: 0.20 })
 
-function terraEnlarge(){
+document.getElementById('terra-container').addEventListener('click', function () {
     if ( terraStatus === false ){
         terraStatus = true;
 
@@ -55,4 +55,4 @@ function terraEnlarge(){
         gsap.to("#terra-container", 0, { y: "-455px", x:"15vw",scale: 0.20 })
         console.log(terraStatus)
     }
-}
+})
