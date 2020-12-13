@@ -12,11 +12,11 @@ gsap.to("#neptune-container", 0, { y: "-1329px", x:"-34vw", scale: 0.20 })
 gsap.to("#pluto-container", 0, { y: "-1535px", x:"-44vw", scale: 0.20 })
 
 function terraEnlarge(){
-    if ( terraStatus = false ){
+    if ( terraStatus === false ){
         terraStatus = true;
         console.log(terraStatus)
     }
-    else if ( terraStatus = true ){
+    else if ( terraStatus === true ){
         terraStatus = false;
         console.log(terraStatus)
     }
@@ -56,12 +56,12 @@ function terraEnlarge(){
         // .add(terraBeta2);
 }
 
-function buttontest (){
-    if ( terraStatus = false ){
+function buttonTest (){
+    if ( terraStatus === false ){
         terraStatus = true;
         console.log(terraStatus)
     }
-    else if ( terraStatus = true ){
+    else if ( terraStatus === true ){
         terraStatus = false;
         console.log(terraStatus)
     }
