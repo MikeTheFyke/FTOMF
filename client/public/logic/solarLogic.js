@@ -62,4 +62,7 @@ document.getElementById('mars-container').addEventListener('click', function () 
 
     gsap.to("#mars-container", 2, { y: 0, scale: 1 })
 
+    var marsMap = new TimelineMax();
+    marsMap.to("#mars-map", 5, { x: "400px", repeat: -1, ease: "Linear.easeInOut" });
+
 })
