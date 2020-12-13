@@ -64,5 +64,19 @@ document.getElementById('mars-container').addEventListener('click', function () 
 
     var marsMap = new TimelineMax();
     marsMap.to("#mars-map", 5, { x: "400px", repeat: -1, ease: "Linear.easeInOut" });
-    marsMap.to("#phobos-map", 5, { x: "40px", repeat: -1, ease: "Linear.easeInOut" });
+
+    var phobosMap = new TimelineMax();
+    phobosMap.to("#phobos-map", 5, { x: "40px", repeat: -1, ease: "Linear.easeInOut" });
+    
+    var phobosMove = new TimelineMax();
+    phobosMove.to("#mars-phobos", {
+        motionPath: {
+            path:[ { x: 95, y: 5 },
+                { x: 200, y:0 },
+                { x: 95, y:5 },
+                { x: 0, y:0 },
+                ],
+        curviness: 1
+        }, 
+        duration: 5, ease: "Linear.easeInOut", repeat: -1, opacity: 0 });
 })
