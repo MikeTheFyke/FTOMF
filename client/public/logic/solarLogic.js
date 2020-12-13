@@ -56,3 +56,13 @@ function terraEnlarge(){
         // .add(terraBeta2);
 }
 
+function buttontest (){
+    if ( terraStatus = false ){
+        terraStatus = true;
+        console.log(terraStatus)
+    }
+    else if ( terraStatus = true ){
+        terraStatus = false;
+        console.log(terraStatus)
+    }
+}
