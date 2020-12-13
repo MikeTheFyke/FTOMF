@@ -24,7 +24,7 @@ document.getElementById('terra-container').addEventListener('click', function ()
         terraBeta.to("#terra-beta", {
         motionPath: {
             path:[ { x: 95, y: 5 },
-                { x: 190, y:0 },
+                { x: 200, y:0 },
                 { x: 95, y:5 },
                 { x: 0, y:0 },
                 ],
@@ -36,7 +36,7 @@ document.getElementById('terra-container').addEventListener('click', function ()
         terraBeta2.to("#terra-beta2", {
         motionPath: {
             path:[ { x: 95, y: 5 },
-                { x: 190, y:0 },
+                { x: 200, y:0 },
                 { x: 95, y:5 },
                 { x: 0, y:0 },
                 ],
@@ -52,7 +52,7 @@ document.getElementById('terra-container').addEventListener('click', function ()
     }
     else if ( terraStatus === true ){
         terraStatus = false;
-        gsap.to("#terra-container", 0, { y: "-455px", x:"15vw",scale: 0.20 })
+        gsap.to("#terra-container", 2, { y: "-455px", x:"15vw",scale: 0.20 })
         console.log(terraStatus)
     }
 })
