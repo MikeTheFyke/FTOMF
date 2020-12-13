@@ -1,5 +1,13 @@
+var sunStatus = false;
+var mercuryStatus = false;
+var venusStatus = false;
 var terraStatus = false;
 var marsStatus = false;
+var saturnStatus = false;
+var jupiterStatus = false;
+var uranusStatus = false;
+var neptuneStatus = false;
+var plutoStatus = false;
 
 gsap.to("#sun-container", 0, { y: "-90px", x:"45.5vw", scale: 0.20 })
 gsap.to("#mercury-container", 0, { y: "-298px", x:"35.75vw", scale: 0.20 })
