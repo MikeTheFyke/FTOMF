@@ -1,4 +1,5 @@
 var terraStatus = false;
+var marsStatus = false;
 
 gsap.to("#sun-container", 0, { y: "-90px", x:"45.5vw", scale: 0.20 })
 gsap.to("#mercury-container", 0, { y: "-298px", x:"35.75vw", scale: 0.20 })
@@ -55,4 +56,10 @@ document.getElementById('terra-container').addEventListener('click', function ()
         gsap.to("#terra-container", 2, { y: "-455px", x:"15vw",scale: 0.20 })
         console.log(terraStatus)
     }
+})
+
+document.getElementById('mars-container').addEventListener('click', function () {
+
+    gsap.to("#mars-container", 2, { y: 0, scale: 1 })
+
 })
