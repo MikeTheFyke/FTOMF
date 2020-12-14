@@ -174,3 +174,23 @@ document.getElementById('mars-container').addEventListener('click', function () 
         console.log(marsStatus)
     }
 })
+
+document.getElementById('saturn-container').addEventListener('click', function () {
+    if ( saturnStatus === false ){
+        saturnStatus = true;
+
+        gsap.to("#saturn-container", 2, { y: 0, scale: 1 })
+
+        var saturnMap = new TimelineMax();
+        saturnMap.to("#saturn-map", 5, { x: "400px", repeat: -1, ease: "Linear.easeInOut" });
+        
+        var master = new TimelineMax();
+        master.add(saturnMap)
+        console.log(saturnStatus)
+    }
+    else if ( saturnStatus === true ){
+        saturnStatus = false;
+        gsap.to("#saturn-container", 2, { y: "-505px", x:"25.5vw", scale: 0.20 })
+        console.log(saturnStatus)
+    }
+})
