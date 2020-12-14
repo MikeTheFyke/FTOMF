@@ -20,6 +20,54 @@ gsap.to("#uranus-container", 0, { y: "-1125px", x:"-24vw", scale: 0.20 })
 gsap.to("#neptune-container", 0, { y: "-1329px", x:"-34vw", scale: 0.20 })
 gsap.to("#pluto-container", 0, { y: "-1535px", x:"-44vw", scale: 0.20 })
 
+document.getElementById('sun-container').addEventListener('click', function () {
+
+    if ( sunStatus === false ){
+        sunStatus = true;
+
+        gsap.to("#sun-container", 2, { y: 0, scale: 1 })
+
+        var sunMap = new TimelineMax();
+        sunMap.to("#sun-map", 5, { x: "358px", repeat: -1, ease: "Linear.easeInOut" });
+        
+        var master = new TimelineMax();
+        master.add(sunMap)
+            // .add(terraBeta)
+            // .add(terraBeta2);
+            console.log(sunStatus)
+    }
+    else if ( sunStatus === true ){
+        sunStatus = false;
+        gsap.to("#sun-container", 2, { y: "-90px", x:"45.5vw", scale: 0.20 })
+        console.log(sunStatus)
+    }
+
+})
+
+document.getElementById('mercury-container').addEventListener('click', function () {
+
+    if ( mercuryStatus === false ){
+        mercuryStatus = true;
+
+        gsap.to("#mercury-container", 2, { y: 0, scale: 1 })
+
+        var mercuryMap = new TimelineMax();
+        mercuryMap.to("#mercury-map", 5, { x: "400px", repeat: -1, ease: "Linear.easeInOut" });
+        
+        var master = new TimelineMax();
+        master.add(mercuryMap)
+            // .add(terraBeta)
+            // .add(terraBeta2);
+            console.log(mercuryStatus)
+    }
+    else if ( mercuyStatus === true ){
+        mercuryStatus = false;
+        gsap.to("#mercury-container", 2, { y: "-298px", x:"35.75vw", scale: 0.20 })
+        console.log(mercuryStatus)
+    }
+
+})
+
 document.getElementById('terra-container').addEventListener('click', function () {
     if ( terraStatus === false ){
         terraStatus = true;
@@ -110,28 +158,4 @@ document.getElementById('mars-container').addEventListener('click', function () 
         gsap.to("#mars-container", 2, { y: "-455px", x:"5vw", scale: 0.20 })
         console.log(marsStatus)
     }
-})
-
-document.getElementById('sun-container').addEventListener('click', function () {
-
-    if ( sunStatus === false ){
-        sunStatus = true;
-
-        gsap.to("#sun-container", 2, { y: 0, scale: 1 })
-
-        var sunMap = new TimelineMax();
-        sunMap.to("#sun-map", 5, { x: "358px", repeat: -1, ease: "Linear.easeInOut" });
-        
-        var master = new TimelineMax();
-        master.add(sunMap)
-            // .add(terraBeta)
-            // .add(terraBeta2);
-            console.log(sunStatus)
-    }
-    else if ( sunStatus === true ){
-        sunStatus = false;
-        gsap.to("#sun-container", 2, { y: "-90px", x:"45.5vw", scale: 0.20 })
-        console.log(sunStatus)
-    }
-
 })
