@@ -114,6 +114,24 @@ document.getElementById('mars-container').addEventListener('click', function () 
 
 document.getElementById('sun-container').addEventListener('click', function () {
 
+    if ( sunStatus === false ){
+        sunStatus = true;
 
+        gsap.to("#sun-container", 2, { y: 0, scale: 1 })
+
+        var sunMap = new TimelineMax();
+        sunMap.to("#sun-map", 5, { x: "358px", repeat: -1, ease: "Linear.easeInOut" });
+        
+        var master = new TimelineMax();
+        master.add(sunMap)
+            // .add(terraBeta)
+            // .add(terraBeta2);
+            console.log(sunStatus)
+    }
+    else if ( sunStatus === true ){
+        sunStatus = false;
+        gsap.to("#sun-container", 2, { y: "-90px", x:"45.5vw", scale: 0.20 })
+        console.log(sunStatus)
+    }
 
 })
