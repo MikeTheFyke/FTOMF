@@ -10,15 +10,15 @@ var neptuneStatus = false;
 var plutoStatus = false;
 
 gsap.to("#sun-container", 0, { y: "-90px", x:"45.5vw", scale: 0.20 })
-gsap.to("#mercury-container", 0, { y: "-298px", x:"35.75vw", scale: 0.20 })
-gsap.to("#venus-container", 0, { y: "-505px", x:"25.5vw", scale: 0.20 })
+gsap.to("#mercury-container", 0, { y: "-295px", x:"35.75vw", scale: 0.20 })
+gsap.to("#venus-container", 0, { y: "-495px", x:"25.5vw", scale: 0.20 })
 gsap.to("#terra-container", 0, { y: "-455px", x:"15vw",scale: 0.20 })
-gsap.to("#mars-container", 0, { y: "-455px", x:"5vw", scale: 0.20 })
+gsap.to("#mars-container", 0, { y: "-460px", x:"5vw", scale: 0.20 })
 gsap.to("#saturn-container", 0, { y: "-700px", x:"-4vw", scale: 0.20 })
 gsap.to("#jupiter-container", 0, { y: "-900px", x:"-14vw", scale: 0.20 })
-gsap.to("#uranus-container", 0, { y: "-1125px", x:"-24vw", scale: 0.20 })
-gsap.to("#neptune-container", 0, { y: "-1329px", x:"-34vw", scale: 0.20 })
-gsap.to("#pluto-container", 0, { y: "-1535px", x:"-44vw", scale: 0.20 })
+gsap.to("#uranus-container", 0, { y: "-1100px", x:"-24vw", scale: 0.20 })
+gsap.to("#neptune-container", 0, { y: "-1300px", x:"-34vw", scale: 0.20 })
+gsap.to("#pluto-container", 0, { y: "-1500px", x:"-44vw", scale: 0.20 })
 
 document.getElementById('sun-container').addEventListener('click', function () {
 
@@ -58,7 +58,7 @@ document.getElementById('mercury-container').addEventListener('click', function 
     }
     else if ( mercuryStatus === true ){
         mercuryStatus = false;
-        gsap.to("#mercury-container", 2, { y: "-298px", x:"35.75vw", scale: 0.20 })
+        gsap.to("#mercury-container", 2, { y: "-295px", x:"35.75vw", scale: 0.20 })
         console.log(mercuryStatus)
     }
 })
@@ -78,7 +78,7 @@ document.getElementById('venus-container').addEventListener('click', function ()
     }
     else if ( venusStatus === true ){
         venusStatus = false;
-        gsap.to("#venus-container", 2, { y: "-505px", x:"25.5vw", scale: 0.20 })
+        gsap.to("#venus-container", 2, { y: "-495px", x:"25.5vw", scale: 0.20 })
         console.log(venusStatus)
     }
 })
@@ -170,7 +170,7 @@ document.getElementById('mars-container').addEventListener('click', function () 
     }
     else if ( marsStatus === true ){
         marsStatus = false;
-        gsap.to("#mars-container", 2, { y: "-455px", x:"5vw", scale: 0.20 })
+        gsap.to("#mars-container", 2, { y: "-460px", x:"5vw", scale: 0.20 })
         console.log(marsStatus)
     }
 })
@@ -190,7 +190,7 @@ document.getElementById('saturn-container').addEventListener('click', function (
     }
     else if ( saturnStatus === true ){
         saturnStatus = false;
-        gsap.to("#saturn-container", 2, { y: "-710px", x:"-4vw", scale: 0.20 })
+        gsap.to("#saturn-container", 2, { y: "-700px", x:"-4vw", scale: 0.20 })
         console.log(saturnStatus)
     }
 })
