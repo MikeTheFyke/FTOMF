@@ -242,7 +242,7 @@ document.getElementById('neptune-container').addEventListener('click', function 
         gsap.to("#neptune-container", 2, { y: 0, scale: 1 })
 
         var neptuneMap = new TimelineMax();
-        neptuneMap.to("#neptune-map", 5, { x: "400px", repeat: -1, ease: "Linear.easeInOut" });
+        neptuneMap.to("#neptune-map", 5, { x: "266px", repeat: -1, ease: "Linear.easeInOut" });
         
         var master = new TimelineMax();
         master.add(neptuneMap)
