@@ -60,7 +60,7 @@ document.getElementById('mercury-container').addEventListener('click', function 
             // .add(terraBeta2);
             console.log(mercuryStatus)
     }
-    else if ( mercuyStatus === true ){
+    else if ( mercuryStatus === true ){
         mercuryStatus = false;
         gsap.to("#mercury-container", 2, { y: "-298px", x:"35.75vw", scale: 0.20 })
         console.log(mercuryStatus)
