@@ -210,7 +210,27 @@ document.getElementById('jupiter-container').addEventListener('click', function 
     }
     else if ( jupiterStatus === true ){
         jupiterStatus = false;
-        gsap.to("#jupiter-container", 2, { y: "-700px", x:"-4vw", scale: 0.20 })
+        gsap.to("#jupiter-container", 2, { y: "-900px", x:"-14vw", scale: 0.20 })
         console.log(jupiterStatus)
+    }
+})
+
+document.getElementById('uranus-container').addEventListener('click', function () {
+    if ( uranusStatus === false ){
+        uranusStatus = true;
+
+        gsap.to("#uranus-container", 2, { y: 0, scale: 1 })
+
+        var uranusMap = new TimelineMax();
+        uranusMap.to("#uranus-map", 5, { x: "400px", repeat: -1, ease: "Linear.easeInOut" });
+        
+        var master = new TimelineMax();
+        master.add(uranusMap)
+        console.log(uranusStatus)
+    }
+    else if ( uranusStatus === true ){
+        uranusStatus = false;
+        gsap.to("#uranus-container", 2, { y: "-1100px", x:"-24vw", scale: 0.20 })
+        console.log(uranusStatus)
     }
 })
