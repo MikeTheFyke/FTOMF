@@ -254,3 +254,23 @@ document.getElementById('neptune-container').addEventListener('click', function 
         console.log(neptuneStatus)
     }
 })
+
+document.getElementById('pluto-container').addEventListener('click', function () {
+    if ( plutoStatus === false ){
+        plutoStatus = true;
+
+        gsap.to("#pluto-container", 2, { y: 0, scale: 1 })
+
+        var plutoMap = new TimelineMax();
+        plutoMap.to("#pluto-map", 5, { x: "400px", repeat: -1, ease: "Linear.easeInOut" });
+        
+        var master = new TimelineMax();
+        master.add(plutoMap)
+        console.log(plutoStatus)
+    }
+    else if ( plutoStatus === true ){
+        plutoStatus = false;
+        gsap.to("#pluto-container", 2, { y: "-1500px", x:"-44vw", scale: 0.20 })
+        console.log(plutoStatus)
+    }
+})
