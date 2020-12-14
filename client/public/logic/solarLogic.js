@@ -194,3 +194,23 @@ document.getElementById('saturn-container').addEventListener('click', function (
         console.log(saturnStatus)
     }
 })
+
+document.getElementById('jupiter-container').addEventListener('click', function () {
+    if ( jupiterStatus === false ){
+        jupiterStatus = true;
+
+        gsap.to("#jupiter-container", 2, { y: 0, scale: 1 })
+
+        var jupiterMap = new TimelineMax();
+        jupiterMap.to("#jupiter-map", 5, { x: "400px", repeat: -1, ease: "Linear.easeInOut" });
+        
+        var master = new TimelineMax();
+        master.add(jupiterMap)
+        console.log(jupiterStatus)
+    }
+    else if ( jupiterStatus === true ){
+        jupiterStatus = false;
+        gsap.to("#jupiter-container", 2, { y: "-700px", x:"-4vw", scale: 0.20 })
+        console.log(jupiterStatus)
+    }
+})
