@@ -41,11 +41,9 @@ document.getElementById('sun-container').addEventListener('click', function () {
         gsap.to("#sun-container", 2, { y: "-90px", x:"45.5vw", scale: 0.20 })
         console.log(sunStatus)
     }
-
 })
 
 document.getElementById('mercury-container').addEventListener('click', function () {
-
     if ( mercuryStatus === false ){
         mercuryStatus = true;
 
@@ -56,16 +54,33 @@ document.getElementById('mercury-container').addEventListener('click', function 
         
         var master = new TimelineMax();
         master.add(mercuryMap)
-            // .add(terraBeta)
-            // .add(terraBeta2);
-            console.log(mercuryStatus)
+        console.log(mercuryStatus)
     }
     else if ( mercuryStatus === true ){
         mercuryStatus = false;
         gsap.to("#mercury-container", 2, { y: "-298px", x:"35.75vw", scale: 0.20 })
         console.log(mercuryStatus)
     }
+})
 
+document.getElementById('venus-container').addEventListener('click', function () {
+    if ( venusStatus === false ){
+        venusStatus = true;
+
+        gsap.to("#venus-container", 2, { y: 0, scale: 1 })
+
+        var venusMap = new TimelineMax();
+        venusMap.to("#venus-map", 5, { x: "400px", repeat: -1, ease: "Linear.easeInOut" });
+        
+        var master = new TimelineMax();
+        master.add(venusMap)
+        console.log(venusStatus)
+    }
+    else if ( venusStatus === true ){
+        venusStatus = false;
+        gsap.to("#venus-container", 2, { y: "-505px", x:"25.5vw", scale: 0.20 })
+        console.log(venusStatus)
+    }
 })
 
 document.getElementById('terra-container').addEventListener('click', function () {
