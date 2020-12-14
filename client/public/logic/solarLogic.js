@@ -190,7 +190,7 @@ document.getElementById('saturn-container').addEventListener('click', function (
     }
     else if ( saturnStatus === true ){
         saturnStatus = false;
-        gsap.to("#saturn-container", 2, { y: "-505px", x:"25.5vw", scale: 0.20 })
+        gsap.to("#saturn-container", 2, { y: "-710px", x:"-4vw", scale: 0.20 })
         console.log(saturnStatus)
     }
 })
