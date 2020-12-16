@@ -236,3 +236,39 @@
     left: -400px;
     height: 100%;
 }
+
+#neptune-container{
+    width: 12vw;
+    height: 12vw;
+    border-radius: 6vw;
+    border-color: black;
+    border-style: solid;
+    border-width: thin;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#neptune-map{
+    position: relative;
+    top: 0px;
+    left: -325px;
+    height: 100%;
+}
+
+#pluto-container{
+    width: 12vw;
+    height: 12vw;
+    border-radius: 6vw;
+    border-color: black;
+    border-style: solid;
+    border-width: thin;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#pluto-map{
+    position: relative;
+    top: 0px;
+    left: -400px;
+    height: 100%;
+}
