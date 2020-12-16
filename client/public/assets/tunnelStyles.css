@@ -1,11 +1,7 @@
-#edge01{
-    width: 100vw;
-    height: 10vh;
-    background-color: brown;
-}
-
-#inner01{
-    width: 100vw;
-    height: 10vh;
-    background-color: sienna;
+#solarSystem-Contianer{
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
 }
