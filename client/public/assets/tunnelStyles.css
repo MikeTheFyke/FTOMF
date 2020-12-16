@@ -200,3 +200,21 @@
     left: -400px;
     height: 100%;
 }
+
+#jupiter-container{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    border-color: black;
+    border-style: solid;
+    border-width: thin;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#jupiter-map{
+    position: relative;
+    top: 0px;
+    left: -400px;
+    height: 100%;
+}
