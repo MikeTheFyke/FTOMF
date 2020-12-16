@@ -99,7 +99,9 @@
 }
 
 #moon-map{
-    height: 100%;
+    position: absolute;
+    top: 0px;
+    height: 1vw;
 }
 
 #terra-beta2{
@@ -115,7 +117,9 @@
 }
 
 #moon-map2{
-    height: 100%;
+    position: absolute;
+    top: 0px;
+    height: 1vw;
 }
 #mars-container{
     position: relative;
