@@ -59,3 +59,126 @@
     left: -400px;
     height: 100%;
 }
+
+#terra-container{
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    height: 300px;
+}
+
+#terra{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    border-color: black;
+    border-style: solid;
+    border-width: thin;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#earth-map{
+    position: relative;
+    top: 0px;
+    left: -800px;
+    height: 100%;
+}
+
+#terra-beta{
+    position: inherit;
+    top: 20px;
+    left: 41%;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    border-color: black;
+    border-style: solid;
+    border-width: thin;
+    overflow: hidden;
+}
+
+#moon-map{
+    height: 100%;
+}
+
+#terra-beta2{
+    position: inherit;
+    top: 20px;
+    left: 41%;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    border-color: black;
+    border-style: solid;
+    border-width: thin;
+    overflow: hidden;
+}
+
+#moon-map2{
+    height: 100%;
+}
+#mars-container{
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    height: 300px;
+}
+
+#mars-alpha{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    border-color: black;
+    border-style: solid;
+    border-width: thin;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#mars-map{
+    position: relative;
+    top: 0px;
+    left: -400px;
+    height: 100%;
+}
+
+#mars-phobos{
+    position: inherit;
+    top: 20px;
+    left: 40%;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    border-color: black;
+    border-style: solid;
+    border-width: thin;
+    overflow: hidden;
+}
+
+#phobos-map{
+    position: relative;
+    top: 0px;
+    left: -50px;
+    height: 100%;
+}
+
+#mars-deimos{
+    position: inherit;
+    top: 60px;
+    left: 37%;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    border-color: black;
+    border-style: solid;
+    border-width: thin;
+    overflow: hidden;
+}
+
+#deimos-map{
+    position: relative;
+    top: 0px;
+    left: -50px;
+    height: 100%;
+}
