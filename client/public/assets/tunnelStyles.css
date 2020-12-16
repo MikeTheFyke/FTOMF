@@ -7,9 +7,9 @@
 }
 
 #sun-container{
-    width: 200px;
-    height: 200px;
-    border-radius: 100px;
+    width: 12vw;
+    height: 12vw;
+    border-radius: 6vw;
     border-color: black;
     border-style: solid;
     border-width: thin;
@@ -25,9 +25,9 @@
 }
 
 #mercury-container{
-    width: 200px;
-    height: 200px;
-    border-radius: 100px;
+    width: 12vw;
+    height: 12vw;
+    border-radius: 6vw;
     border-color: black;
     border-style: solid;
     border-width: thin;
@@ -43,9 +43,9 @@
 }
 
 #venus-container{
-    width: 200px;
-    height: 200px;
-    border-radius: 100px;
+    width: 12vw;
+    height: 12vw;
+    border-radius: 6vw;
     border-color: black;
     border-style: solid;
     border-width: thin;
@@ -63,15 +63,15 @@
 #terra-container{
     position: relative;
     top:0px;
-    width: 200px;
-    height: 200px;
-    margin: 0px 20px;
+    width: 12vw;
+    height: 12vw;
+    /* margin: 0px 20px; */
 }
 
 #terra{
-    width: 200px;
-    height: 200px;
-    border-radius: 100px;
+    width: 12vw;
+    height: 12vw;
+    border-radius: 6vw;
     border-color: black;
     border-style: solid;
     border-width: thin;
@@ -120,15 +120,15 @@
 #mars-container{
     position: relative;
     top:0px;
-    width: 200px;
-    height: 200px;
-    margin: 0px 20px;
+    width: 12vw;
+    height: 12vw;
+    /* margin: 0px 20px; */
 }
 
 #mars-alpha{
-    width: 200px;
-    height: 200px;
-    border-radius: 100px;
+    width: 12vw;
+    height: 12vw;
+    border-radius: 6vw;
     border-color: black;
     border-style: solid;
     border-width: thin;
@@ -184,9 +184,9 @@
 }
 
 #saturn-container{
-    width: 200px;
-    height: 200px;
-    border-radius: 100px;
+    width: 12vw;
+    height: 12vw;
+    border-radius: 6vw;
     border-color: black;
     border-style: solid;
     border-width: thin;
@@ -202,9 +202,9 @@
 }
 
 #jupiter-container{
-    width: 200px;
-    height: 200px;
-    border-radius: 100px;
+    width: 12vw;
+    height: 12vw;
+    border-radius: 6vw;
     border-color: black;
     border-style: solid;
     border-width: thin;
@@ -220,9 +220,9 @@
 }
 
 #uranus-container{
-    width: 200px;
-    height: 200px;
-    border-radius: 100px;
+    width: 12vw;
+    height: 12vw;
+    border-radius: 6vw;
     border-color: black;
     border-style: solid;
     border-width: thin;
