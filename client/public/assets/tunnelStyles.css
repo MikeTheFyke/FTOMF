@@ -20,8 +20,8 @@
 #sun-map{
     position: relative;
     top: 0px;
-    left: -400px;
-    height: 100%;
+    left: -10vw;
+    height: 10vw;
 }
 
 #mercury-container{
@@ -38,8 +38,8 @@
 #mercury-map{
     position: relative;
     top: 0px;
-    left: -400px;
-    height: 100%;
+    left: -10vw;
+    height: 10vw;
 }
 
 #venus-container{
