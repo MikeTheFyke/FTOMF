@@ -89,9 +89,9 @@
 #terra-beta{
     position: absolute;
     top: 0px;
-    width: 20px;
-    height: 20px;
-    border-radius: 20px;
+    width: 1vw;
+    height: 1vw;
+    border-radius: 1vw;
     border-color: black;
     border-style: solid;
     border-width: thin;
@@ -105,9 +105,9 @@
 #terra-beta2{
     position: absolute;
     top: 0px;
-    width: 20px;
-    height: 20px;
-    border-radius: 20px;
+    width: 1vw;
+    height: 1vw;
+    border-radius: 1vw;
     border-color: black;
     border-style: solid;
     border-width: thin;
@@ -145,11 +145,11 @@
 
 #mars-phobos{
     position: absolute;
-    top: 20px;
+    top: 1vw;
     left: 0px;
-    width: 20px;
-    height: 20px;
-    border-radius: 20px;
+    width: 1vw;
+    height: 1vw;
+    border-radius: 1vw;
     border-color: black;
     border-style: solid;
     border-width: thin;
@@ -165,11 +165,11 @@
 
 #mars-deimos{
     position: absolute;
-    top: 60px;
+    top: 4vw;
     left: 0px;
-    width: 20px;
-    height: 20px;
-    border-radius: 20px;
+    width: 1vw;
+    height: 1vw;
+    border-radius: 1vw;
     border-color: black;
     border-style: solid;
     border-width: thin;
