@@ -56,8 +56,8 @@
 #venus-map{
     position: relative;
     top: 0px;
-    left: -400px;
-    height: 100%;
+    left: -10vw;
+    height: 10vw;
 }
 
 #terra-container{
@@ -82,8 +82,8 @@
 #earth-map{
     position: relative;
     top: 0px;
-    left: -800px;
-    height: 100%;
+    left: -10vw;
+    height: 10vw;
 }
 
 #terra-beta{
@@ -139,8 +139,8 @@
 #mars-map{
     position: relative;
     top: 0px;
-    left: -400px;
-    height: 100%;
+    left: -10vw;
+    height: 10vw;
 }
 
 #mars-phobos{
@@ -197,8 +197,8 @@
 #saturn-map{
     position: relative;
     top: 0px;
-    left: -400px;
-    height: 100%;
+    left: -10vw;
+    height: 10vw;
 }
 
 #jupiter-container{
@@ -215,8 +215,8 @@
 #jupiter-map{
     position: relative;
     top: 0px;
-    left: -400px;
-    height: 100%;
+    left: -10vw;
+    height: 10vw;
 }
 
 #uranus-container{
@@ -233,8 +233,8 @@
 #uranus-map{
     position: relative;
     top: 0px;
-    left: -400px;
-    height: 100%;
+    left: -10vw;
+    height: 10vw;
 }
 
 #neptune-container{
@@ -251,8 +251,8 @@
 #neptune-map{
     position: relative;
     top: 0px;
-    left: -325px;
-    height: 100%;
+    left: -10vw;
+    height: 10vw;
 }
 
 #pluto-container{
@@ -269,6 +269,6 @@
 #pluto-map{
     position: relative;
     top: 0px;
-    left: -400px;
-    height: 100%;
+    left: -10vw;
+    height: 10vw;
 }
