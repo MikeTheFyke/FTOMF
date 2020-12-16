@@ -161,10 +161,9 @@
 }
 
 #phobos-map{
-    position: relative;
+    position: absolute;
     top: 0px;
-    left: -50px;
-    height: 100%;
+    height: 1vw;
 }
 
 #mars-deimos{
@@ -181,10 +180,9 @@
 }
 
 #deimos-map{
-    position: relative;
+    position: absolute;
     top: 0px;
-    left: -50px;
-    height: 100%;
+    height: 1vw;
 }
 
 #saturn-container{
