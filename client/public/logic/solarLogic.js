@@ -28,7 +28,7 @@ document.getElementById('sun-container').addEventListener('click', function () {
         gsap.to("#sun-container", 2, { y: 0, scale: 1 })
 
         var sunMap = new TimelineMax();
-        sunMap.to("#sun-map", 5, { x: "358px", repeat: -1, ease: "Linear.easeInOut" });
+398px
         
         var master = new TimelineMax();
         master.add(sunMap)
