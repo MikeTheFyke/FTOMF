@@ -4,6 +4,7 @@ body{
 
 #solarSystem-Container{
     position: absolute;
+    top: 0px;
     width: 100%;
     height: 200px;
     display: flex;
