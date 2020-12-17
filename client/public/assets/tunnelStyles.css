@@ -130,7 +130,7 @@ body{
     top:0px;
     width: 4.25vw;
     height: 4.25vw;
-    margin: 0 auto;
+    margin: auto auto;
 }
 
 #mars-alpha{
@@ -196,7 +196,7 @@ body{
     border-color: black;
     border-style: solid;
     border-width: thin;
-    margin: 0 auto;
+    margin: auto auto;
     overflow: hidden;
 }
 
@@ -214,7 +214,7 @@ body{
     border-color: black;
     border-style: solid;
     border-width: thin;
-    margin: 0 auto;
+    margin: auto auto;
     overflow: hidden;
 }
 
@@ -232,7 +232,7 @@ body{
     border-color: black;
     border-style: solid;
     border-width: thin;
-    margin: 0 auto;
+    margin: auto auto;
     overflow: hidden;
 }
 
@@ -250,7 +250,7 @@ body{
     border-color: black;
     border-style: solid;
     border-width: thin;
-    margin: 0 auto;
+    margin: auto auto;
     overflow: hidden;
 }
 
@@ -268,7 +268,7 @@ body{
     border-color: black;
     border-style: solid;
     border-width: thin;
-    margin: 0 auto;
+    margin: auto auto;
     overflow: hidden;
 }
 
