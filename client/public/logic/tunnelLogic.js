@@ -1,5 +1,6 @@
 var sunStatus = false;
 var mercuryStatus = false;
+var venusStatus = false;
 
 // Preset Map Logic
 gsap.to("#sun-map", 5, { x: "430px", repeat: -1, ease: "Linear.easeInOut" });
@@ -25,5 +26,16 @@ document.getElementById('mercury-container').addEventListener('click', function 
     } else if ( mercuryStatus === true ){
         mercuryStatus = false;
         gsap.to("#mercury-container", 2, { x: 0 ,y: 0, scale: 1 })
+    }
+})
+
+// Venus Enlarge Logic
+document.getElementById('venus-container').addEventListener('click', function () {
+    if ( venusStatus === false ){
+        venusStatus = true;
+        gsap.to("#venus-container", 2, { x:"-25vw" ,y: "300px", scale: 4 })
+    } else if ( venusStatus === true ){
+        venusStatus = false;
+        gsap.to("#venus-container", 2, { x: 0 ,y: 0, scale: 1 })
     }
 })
