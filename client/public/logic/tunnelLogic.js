@@ -1,9 +1,9 @@
 var sunStatus = false;
 var mercuryStatus = false;
 
-// Preset Sun Logic
+// Preset Map Logic
 gsap.to("#sun-map", 5, { x: "430px", repeat: -1, ease: "Linear.easeInOut" });
-gsap.to("#mercury-map", 5, { x: "78px", repeat: -1, ease: "Linear.easeInOut" });
+gsap.to("#mercury-map", 5, { x: "80px", repeat: -1, ease: "Linear.easeInOut" });
 
 // Sun Enlarge Logic
 document.getElementById('sun-container').addEventListener('click', function () {
@@ -16,3 +16,13 @@ document.getElementById('sun-container').addEventListener('click', function () {
     }
 })
 
+// Mercury Enlarge Logic
+document.getElementById('mercury-container').addEventListener('click', function () {
+    if ( mercuryStatus === false ){
+        mercuryStatus = true;
+        gsap.to("#mercury-container", 2, { x:"-40vw" ,y: "200px", scale: 2 })
+    } else if ( mercuryStatus === true ){
+        mercuryStatus = false;
+        gsap.to("#mercury-container", 2, { x: 0 ,y: 0, scale: 1 })
+    }
+})
