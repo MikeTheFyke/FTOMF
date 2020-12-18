@@ -1,6 +1,6 @@
 var sunStatus = false;
 
-gsap.to("#sun-map", 5, { x: "140px", repeat: -1, ease: "Linear.easeInOut" });
+gsap.to("#sun-map", 5, { x: "430px", repeat: -1, ease: "Linear.easeInOut" });
 
 document.getElementById('sun-container').addEventListener('click', function () {
     if ( sunStatus === false ){
