@@ -71,9 +71,6 @@ body{
     width: 6.5vw;
     height: 6.5vw;
     border-radius: 3.25vw;
-    border-color: black;
-    border-style: solid;
-    border-width: thin;
     margin: 0 auto;
     overflow: hidden;
 }
@@ -91,9 +88,6 @@ body{
     width: 1vw;
     height: 1vw;
     border-radius: 1vw;
-    border-color: black;
-    border-style: solid;
-    border-width: thin;
     overflow: hidden;
 }
 
@@ -109,9 +103,6 @@ body{
     width: 1vw;
     height: 1vw;
     border-radius: 1vw;
-    border-color: black;
-    border-style: solid;
-    border-width: thin;
     overflow: hidden;
 }
 

@@ -1,6 +1,7 @@
 var sunStatus = false;
 var mercuryStatus = false;
 var venusStatus = false;
+var terraStatus = false;
 
 // Preset Map Logic
 gsap.to("#sun-map", 5, { x: "430px", repeat: -1, ease: "Linear.easeInOut" });
@@ -37,5 +38,16 @@ document.getElementById('venus-container').addEventListener('click', function ()
     } else if ( venusStatus === true ){
         venusStatus = false;
         gsap.to("#venus-container", 2, { x: 0 ,y: 0, scale: 1 })
+    }
+})
+
+// Earth Enlarge Logic
+document.getElementById('terra-container').addEventListener('click', function () {
+    if ( terraStatus === false ){
+        terraStatus = true;
+        gsap.to("#terra-container", 2, { x:"-15vw" ,y: "300px", scale: 4 })
+    } else if ( terraStatus === true ){
+        terraStatus = false;
+        gsap.to("#terra-container", 2, { x: 0 ,y: 0, scale: 1 })
     }
 })
