@@ -1,8 +1,11 @@
 var sunStatus = false;
 var mercuryStatus = false;
 
+// Preset Sun Logic
 gsap.to("#sun-map", 5, { x: "430px", repeat: -1, ease: "Linear.easeInOut" });
+gsap.to("#mercury-map", 5, { x: "78px", repeat: -1, ease: "Linear.easeInOut" });
 
+// Sun Enlarge Logic
 document.getElementById('sun-container').addEventListener('click', function () {
     if ( sunStatus === false ){
         sunStatus = true;
