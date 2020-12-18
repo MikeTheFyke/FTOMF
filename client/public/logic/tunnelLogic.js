@@ -9,6 +9,28 @@ gsap.to("#mercury-map", 5, { x: "80px", repeat: -1, ease: "Linear.easeInOut" });
 gsap.to("#venus-map", 5, { x: "192px", repeat: -1, ease: "Linear.easeInOut" });
 gsap.to("#earth-map", 8, { x: "260px", repeat: -1, ease: "Linear.easeInOut" });
 
+gsap.to("#terra-beta", {
+    motionPath: {
+        path:[ { x: 50, y: 5 },
+            { x: 100, y:0 },
+            { x: 50, y:5 },
+            { x: 0, y:0 },
+            ],
+    curviness: 1
+    }, 
+    duration: 5, ease: "Linear.easeInOut", repeat: -1, opacity: 0 });
+
+gsap.to("#terra-beta2", {
+    motionPath: {
+        path:[ { x: 50, y: 5 },
+            { x: 100, y:0 },
+            { x: 50, y:5 },
+            { x: 0, y:0 },
+            ],
+    curviness: 1
+    }, 
+    duration: 5, ease: "Linear.easeInOut", repeat: -1 });
+
 // Sun Enlarge Logic
 document.getElementById('sun-container').addEventListener('click', function () {
     if ( sunStatus === false ){
