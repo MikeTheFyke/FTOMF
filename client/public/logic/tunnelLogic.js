@@ -9,7 +9,7 @@ gsap.to("#mercury-map", 5, { x: "80px", repeat: -1, ease: "Linear.easeInOut" });
 document.getElementById('sun-container').addEventListener('click', function () {
     if ( sunStatus === false ){
         sunStatus = true;
-        gsap.to("#sun-container", 2, { x:"-40vw" ,y: "200px", scale: 2 })
+        gsap.to("#sun-container", 2, { x:"-40vw" ,y: "300px", scale: 2 })
     } else if ( sunStatus === true ){
         sunStatus = false;
         gsap.to("#sun-container", 2, { x: 0 ,y: 0, scale: 1 })
@@ -20,7 +20,7 @@ document.getElementById('sun-container').addEventListener('click', function () {
 document.getElementById('mercury-container').addEventListener('click', function () {
     if ( mercuryStatus === false ){
         mercuryStatus = true;
-        gsap.to("#mercury-container", 2, { x:"-40vw" ,y: "200px", scale: 2 })
+        gsap.to("#mercury-container", 2, { x:"-30vw" ,y: "300px", scale: 10 })
     } else if ( mercuryStatus === true ){
         mercuryStatus = false;
         gsap.to("#mercury-container", 2, { x: 0 ,y: 0, scale: 1 })

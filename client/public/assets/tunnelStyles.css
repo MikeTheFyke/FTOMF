@@ -33,9 +33,6 @@ body{
     width: 2.4vw;
     height: 2.4vw;
     border-radius: 1.2vw;
-    border-color: black;
-    border-style: solid;
-    border-width: thin;
     margin: auto auto;
     overflow: hidden;
 }
