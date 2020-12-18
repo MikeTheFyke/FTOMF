@@ -7,6 +7,7 @@ var terraStatus = false;
 gsap.to("#sun-map", 5, { x: "430px", repeat: -1, ease: "Linear.easeInOut" });
 gsap.to("#mercury-map", 5, { x: "80px", repeat: -1, ease: "Linear.easeInOut" });
 gsap.to("#venus-map", 5, { x: "192px", repeat: -1, ease: "Linear.easeInOut" });
+gsap.to("#earth-map", 8, { x: "260px", repeat: -1, ease: "Linear.easeInOut" });
 
 // Sun Enlarge Logic
 document.getElementById('sun-container').addEventListener('click', function () {
