@@ -279,3 +279,13 @@ body{
     border-radius: 50px;
     background-color: tomato;
 }
+
+#test-div-beta{
+    position: inherit;
+    left: 45vw;
+    top: 20px;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: teal;
+}
