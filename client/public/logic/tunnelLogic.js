@@ -3,6 +3,7 @@ var mercuryStatus = false;
 var venusStatus = false;
 var terraStatus = false;
 var marsStatus = false;
+var saturnStatus = false;
 
 // Preset Map Logic
 gsap.to("#sun-map", 5, { x: "395px", repeat: -1, ease: "Linear.easeInOut" });
@@ -10,6 +11,7 @@ gsap.to("#mercury-map", 5, { x: "73.25px", repeat: -1, ease: "Linear.easeInOut" 
 gsap.to("#venus-map", 5, { x: "176px", repeat: -1, ease: "Linear.easeInOut" });
 gsap.to("#earth-map", 8, { x: "239px", repeat: -1, ease: "Linear.easeInOut" });
 gsap.to("#mars-map", 8, { x: "103px", repeat: -1, ease: "Linear.easeInOut" });
+
 
 // Sun Enlarge Logic
 document.getElementById('sun-container').addEventListener('click', function () {
@@ -63,6 +65,17 @@ document.getElementById('mars-container').addEventListener('click', function () 
     } else if ( marsStatus === true ){
         marsStatus = false;
         gsap.to("#mars-container", 2, { x: 0 ,y: 0, scale: 1 })
+    }
+})
+
+// Mars Enlarge Logic
+document.getElementById('saturn-container').addEventListener('click', function () {
+    if ( saturnStatus === false ){
+        saturnStatus = true;
+        gsap.to("#saturn-container", 2, { x:"-15vw" ,y: "300px", scale: 4 })
+    } else if ( saturnStatus === true ){
+        saturnStatus = false;
+        gsap.to("#saturn-container", 2, { x: 0 ,y: 0, scale: 1 })
     }
 })
 

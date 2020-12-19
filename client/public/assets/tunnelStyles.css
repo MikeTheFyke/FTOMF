@@ -106,9 +106,6 @@ body{
     width: 3.5vw;
     height: 3.5vw;
     border-radius: 1.75vw;
-    border-color: black;
-    border-style: solid;
-    border-width: thin;
     margin: 0 auto;
     overflow: hidden;
 }
@@ -127,9 +124,6 @@ body{
     width: 0.25vw;
     height: 0.25vw;
     border-radius: 0.25vw;
-    border-color: black;
-    border-style: solid;
-    border-width: thin;
     overflow: hidden;
 }
 
@@ -145,10 +139,7 @@ body{
     left: 0px;
     width: 0.25vw;
     height: 0.25vw;
-    border-radius: 0.12vw;
-    border-color: black;
-    border-style: solid;
-    border-width: thin;
+    border-radius: 0.25vw;
     overflow: hidden;
 }
 
