@@ -61,14 +61,14 @@ document.getElementById('terra-container').addEventListener('click', function ()
 document.getElementById('mars-container').addEventListener('click', function () {
     if ( marsStatus === false ){
         marsStatus = true;
-        gsap.to("#mars-container", 2, { x:"-15vw" ,y: "300px", scale: 4 })
+        gsap.to("#mars-container", 2, { x:"-5vw" ,y: "400px", scale: 8 })
     } else if ( marsStatus === true ){
         marsStatus = false;
         gsap.to("#mars-container", 2, { x: 0 ,y: 0, scale: 1 })
     }
 })
 
-// Mars Enlarge Logic
+// Saturn Enlarge Logic
 document.getElementById('saturn-container').addEventListener('click', function () {
     if ( saturnStatus === false ){
         saturnStatus = true;
