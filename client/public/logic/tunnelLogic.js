@@ -11,7 +11,7 @@ gsap.to("#mercury-map", 5, { x: "73.25px", repeat: -1, ease: "Linear.easeInOut" 
 gsap.to("#venus-map", 5, { x: "176px", repeat: -1, ease: "Linear.easeInOut" });
 gsap.to("#earth-map", 8, { x: "239px", repeat: -1, ease: "Linear.easeInOut" });
 gsap.to("#mars-map", 8, { x: "103px", repeat: -1, ease: "Linear.easeInOut" });
-
+gsap.to("#saturn-map", 8, { x: "15vw", repeat: -1, ease: "Linear.easeInOut" });
 
 // Sun Enlarge Logic
 document.getElementById('sun-container').addEventListener('click', function () {
