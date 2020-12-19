@@ -78,6 +78,29 @@ document.getElementById('terra-container').addEventListener('click', function ()
 })
 
 // var tl = gsap.timeline( { defaults: { ease: "Linear.easeInOut" } });
+// var tl = gsap.timeline( { repeat: -1 });
+
+// tl.to("#test-div-beta", { motionPath: {
+//     path:[ { x: 50, y: 5 },
+//         { x: 100, y:0 },
+//         ],
+// curviness: 1
+// }, 
+// duration: 2.5 })
+
+// .to("#test-div-beta", 0, { opacity: 0})
+
+// .to("#test-div-beta", { motionPath: {
+//     path:[ 
+//         { x: 50, y:5 },
+//         { x: 0, y:0 },
+//         ],
+// curviness: 1
+// }, 
+// duration: 2.5 })
+
+// .to("#test-div-beta", 0, { opacity: 1 });
+
 var tl = gsap.timeline( { repeat: -1 });
 
 tl.to("#test-div-beta", { motionPath: {
@@ -86,9 +109,9 @@ tl.to("#test-div-beta", { motionPath: {
         ],
 curviness: 1
 }, 
-duration: 2.5 })
+duration: 2.5, ease: "Linear.easeInOut" })
 
-.to("#test-div-beta", 0, { opacity: 0})
+.to("#test-div-beta", 0, { zIndex: -1})
 
 .to("#test-div-beta", { motionPath: {
     path:[ 
@@ -97,6 +120,6 @@ duration: 2.5 })
         ],
 curviness: 1
 }, 
-duration: 2.5 })
+duration: 2.5, ease: "Linear.easeInOut" })
 
-.to("#test-div-beta", 0, { opacity: 1 });
+.to("#test-div-beta", 0, { zIndex: 2 });
