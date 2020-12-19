@@ -77,3 +77,9 @@ phobos.to("#mars-phobos", { motionPath: { path:[ { x: 30, y: 5 }, { x: 60, y:0 }
     .to("#mars-phobos", 0, { zIndex: -1})
     .to("#mars-phobos", { motionPath: { path:[{ x: 30, y:5 },{ x: 0, y:0 },],curviness: 1 }, duration: 2.5, ease: "Linear.easeInOut" })
     .to("#mars-phobos", 0, { zIndex: 2 });
+
+var deimos = gsap.timeline( { repeat: -1 });
+deimos.to("#mars-deimos", { motionPath: { path:[ { x: 30, y: 5 }, { x: 60, y:0 }, ], curviness: 1 }, duration: 3, ease: "Linear.easeInOut" })
+    .to("#mars-deimos", 0, { zIndex: -1})
+    .to("#mars-deimos", { motionPath: { path:[{ x: 30, y:5 },{ x: 0, y:0 },],curviness: 1 }, duration: 3, ease: "Linear.easeInOut" })
+    .to("#mars-deimos", 0, { zIndex: 2 });
