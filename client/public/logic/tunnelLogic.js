@@ -9,30 +9,6 @@ gsap.to("#mercury-map", 5, { x: "80px", repeat: -1, ease: "Linear.easeInOut" });
 gsap.to("#venus-map", 5, { x: "192px", repeat: -1, ease: "Linear.easeInOut" });
 gsap.to("#earth-map", 8, { x: "260px", repeat: -1, ease: "Linear.easeInOut" });
 
-
-
-gsap.to("#terra-beta", {
-    motionPath: {
-        path:[ { x: 50, y: 5 },
-            { x: 100, y:0 },
-            { x: 50, y:5 },
-            { x: 0, y:0 },
-            ],
-    curviness: 1
-    }, 
-    duration: 5, ease: "Linear.easeInOut", repeat: -1, opacity: 0 });
-
-gsap.to("#terra-beta2", {
-    motionPath: {
-        path:[ { x: 50, y: 5 },
-            { x: 100, y:0 },
-            { x: 50, y:5 },
-            { x: 0, y:0 },
-            ],
-    curviness: 1
-    }, 
-    duration: 5, ease: "Linear.easeInOut", repeat: -1 });
-
 // Sun Enlarge Logic
 document.getElementById('sun-container').addEventListener('click', function () {
     if ( sunStatus === false ){
@@ -78,8 +54,7 @@ document.getElementById('terra-container').addEventListener('click', function ()
 })
 
 var terraBeta = gsap.timeline( { repeat: -1 });
-
-terraBeta.to("#test-div-beta", { motionPath: { path:[ { x: 50, y: 5 }, { x: 100, y:0 }, ], curviness: 1 }, duration: 2.5, ease: "Linear.easeInOut" })
-    .to("#test-div-beta", 0, { zIndex: -1})
-    .to("#test-div-beta", { motionPath: { path:[{ x: 50, y:5 },{ x: 0, y:0 },],curviness: 1 }, duration: 2.5, ease: "Linear.easeInOut" })
-    .to("#test-div-beta", 0, { zIndex: 2 });
+terraBeta.to("#terra-beta", { motionPath: { path:[ { x: 50, y: 5 }, { x: 100, y:0 }, ], curviness: 1 }, duration: 2.5, ease: "Linear.easeInOut" })
+    .to("#terra-beta", 0, { zIndex: -1})
+    .to("#terra-beta", { motionPath: { path:[{ x: 50, y:5 },{ x: 0, y:0 },],curviness: 1 }, duration: 2.5, ease: "Linear.easeInOut" })
+    .to("#terra-beta", 0, { zIndex: 2 });
