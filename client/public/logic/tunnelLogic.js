@@ -5,7 +5,7 @@ var terraStatus = false;
 
 // Preset Map Logic
 gsap.to("#sun-map", 5, { x: "430px", repeat: -1, ease: "Linear.easeInOut" });
-gsap.to("#mercury-map", 5, { x: "80px", repeat: -1, ease: "Linear.easeInOut" });
+gsap.to("#mercury-map", 5, { x: "73.25px", repeat: -1, ease: "Linear.easeInOut" });
 gsap.to("#venus-map", 5, { x: "176px", repeat: -1, ease: "Linear.easeInOut" });
 gsap.to("#earth-map", 8, { x: "239px", repeat: -1, ease: "Linear.easeInOut" });
 
