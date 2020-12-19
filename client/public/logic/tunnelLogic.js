@@ -76,3 +76,15 @@ document.getElementById('terra-container').addEventListener('click', function ()
         gsap.to("#terra-container", 2, { x: 0 ,y: 0, scale: 1 })
     }
 })
+
+var tl = gsap.timeline();
+
+tl.to("#test-div-beta", { motionPath: {
+    path:[ { x: 50, y: 5 },
+        { x: 100, y:0 },
+        { x: 50, y:5 },
+        { x: 0, y:0 },
+        ],
+curviness: 1
+}, 
+duration: 5, ease: "Linear.easeInOut", repeat: -1 });
