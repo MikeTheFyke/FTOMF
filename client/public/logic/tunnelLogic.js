@@ -72,7 +72,7 @@ document.getElementById('mars-container').addEventListener('click', function () 
 document.getElementById('saturn-container').addEventListener('click', function () {
     if ( saturnStatus === false ){
         saturnStatus = true;
-        gsap.to("#saturn-container", 2, { x:"-15vw" ,y: "300px", scale: 4 })
+        gsap.to("#saturn-container", 2, { x: "2vw", y: "400px", scale: 3 })
     } else if ( saturnStatus === true ){
         saturnStatus = false;
         gsap.to("#saturn-container", 2, { x: 0 ,y: 0, scale: 1 })
