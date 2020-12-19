@@ -77,14 +77,23 @@ document.getElementById('terra-container').addEventListener('click', function ()
     }
 })
 
-var tl = gsap.timeline();
+var tl = gsap.timeline({ defaults: { ease: "Linear.easeInOut" }});
 
 tl.to("#test-div-beta", { motionPath: {
     path:[ { x: 50, y: 5 },
         { x: 100, y:0 },
+        ],
+curviness: 1
+}, 
+duration: 5 })
+
+.to("#test-div-beta", 0, { opacity: 0})
+
+.to("#test-div-beta", { motionPath: {
+    path:[ 
         { x: 50, y:5 },
         { x: 0, y:0 },
         ],
 curviness: 1
 }, 
-duration: 5, ease: "Linear.easeInOut", repeat: -1 });
+duration: 5 });
