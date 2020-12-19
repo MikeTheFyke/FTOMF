@@ -4,7 +4,7 @@ body{
 
 #solarSystem-Container{
     position: absolute;
-    top: 0px;
+    top: 5px;
     width: 100%;
     height: 200px;
     display: flex;
@@ -15,9 +15,6 @@ body{
     width: 14vw;
     height: 14vw;
     border-radius: 7vw;
-    border-color: black;
-    border-style: solid;
-    border-width: thin;
     margin: auto auto;
     overflow: hidden;
 }
@@ -119,7 +116,7 @@ body{
 #mars-map{
     position: relative;
     top: 0px;
-    left: -3.5vw;
+    left: -110px;
     height: 3.5vw;
 }
 
