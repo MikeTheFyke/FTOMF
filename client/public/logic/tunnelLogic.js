@@ -9,6 +9,8 @@ gsap.to("#mercury-map", 5, { x: "80px", repeat: -1, ease: "Linear.easeInOut" });
 gsap.to("#venus-map", 5, { x: "192px", repeat: -1, ease: "Linear.easeInOut" });
 gsap.to("#earth-map", 8, { x: "260px", repeat: -1, ease: "Linear.easeInOut" });
 
+
+
 gsap.to("#terra-beta", {
     motionPath: {
         path:[ { x: 50, y: 5 },
