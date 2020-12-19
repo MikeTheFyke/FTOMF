@@ -2,6 +2,7 @@ var sunStatus = false;
 var mercuryStatus = false;
 var venusStatus = false;
 var terraStatus = false;
+var marsStatus = false;
 
 // Preset Map Logic
 gsap.to("#sun-map", 5, { x: "395px", repeat: -1, ease: "Linear.easeInOut" });
@@ -51,6 +52,17 @@ document.getElementById('terra-container').addEventListener('click', function ()
     } else if ( terraStatus === true ){
         terraStatus = false;
         gsap.to("#terra-container", 2, { x: 0 ,y: 0, scale: 1 })
+    }
+})
+
+// Mars Enlarge Logic
+document.getElementById('mars-container').addEventListener('click', function () {
+    if ( marsStatus === false ){
+        marsStatus = true;
+        gsap.to("#mars-container", 2, { x:"-15vw" ,y: "300px", scale: 4 })
+    } else if ( marsStatus === true ){
+        marsStatus = false;
+        gsap.to("#mars-container", 2, { x: 0 ,y: 0, scale: 1 })
     }
 })
 
