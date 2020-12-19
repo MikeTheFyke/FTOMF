@@ -77,7 +77,8 @@ document.getElementById('terra-container').addEventListener('click', function ()
     }
 })
 
-var tl = gsap.timeline({ defaults: { ease: "Linear.easeInOut" }});
+// var tl = gsap.timeline( { defaults: { ease: "Linear.easeInOut" } });
+var tl = gsap.timeline( { repeat: -1 });
 
 tl.to("#test-div-beta", { motionPath: {
     path:[ { x: 50, y: 5 },
@@ -85,7 +86,7 @@ tl.to("#test-div-beta", { motionPath: {
         ],
 curviness: 1
 }, 
-duration: 5 })
+duration: 2.5 })
 
 .to("#test-div-beta", 0, { opacity: 0})
 
@@ -96,4 +97,6 @@ duration: 5 })
         ],
 curviness: 1
 }, 
-duration: 5 });
+duration: 2.5 })
+
+.to("#test-div-beta", 0, { opacity: 1 });
