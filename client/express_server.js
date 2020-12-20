@@ -20,10 +20,14 @@ app.get("/deerhunt", (req, res) => {
 /// Tunnel Route
 app.get("/tunnel", (req, res) => {
   request('https://theskylive.com/how-far-is-mars', (error, response, html) => {
-  if (!error && response.statusCode == 200){
-    console.log(html)
-  }
-});
+    if (!error && response.statusCode == 200){
+      const $ = cheerio.load(html)
+
+      const earthMars = $('.keyinfobox');
+      const earthMarsDistance = earthMars.find('ar').text();
+      console.log(earthMarsDistance);
+    }
+  });
   res.render("tunnel");
 });
 
