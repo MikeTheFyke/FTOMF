@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const PORT = 8080; // default port 8080
+const PORT = process.env.PORT || 8080; // default port 8080
 const request = require ('request');
 const cheerio = require('cheerio');
 
@@ -14,7 +14,7 @@ request('https://theskylive.com/mars-tracker', (error, response, html) => {
 
     const earthMars = $('#disearth');
     const earthMarsDistance = earthMars.text();
-    console.log("Grabbed : " + earthMarsDistance);
+    console.log("Earth To Mars : " + earthMarsDistance);
   }
 });
 
@@ -39,6 +39,7 @@ app.get("/tunnel", (req, res) => {
   //     console.log(earthMarsDistance);
   //   }
   // });
+
   res.render("tunnel");
 });
 
@@ -50,10 +51,3 @@ app.get("/solar", (req, res) => {
 app.listen(PORT, () => {
   console.log(`Example app listening on port ${PORT}!`);
 });
-
-
-// request('https://theskylive.com/how-far-is-mars', (error, response, html) => {
-//   if (!error && response.statusCode == 200){
-//     console.log(html)
-//   }
-// });
