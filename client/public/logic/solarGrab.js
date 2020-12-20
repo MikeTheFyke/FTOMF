@@ -1,12 +1,18 @@
-// const express = require("express");
-// const app = express();
+const request = require ('request');
+const cheerio = require('cheerio');
 
-// const request = require ('request');
-// const cheerio = require('cheerio');
+const earthToMars = () => {
+request('https://theskylive.com/mars-tracker', (error, response, html) => {
+  if (!error && response.statusCode == 200){
+    const $ = cheerio.load(html)
 
+    const earthMars = $('#disearth');
+    const earthMarsDistance = earthMars.text();
+    
+    console.log("Earth To Mars : " + earthMarsDistance);
+  }
+});
 
-// request('https://theskylive.com/how-far-is-mars', (error, response, html) => {
-//   if (!error && response.statusCode == 200){
-//     console.log(html)
-//   }
-// });
+}
+
+module.exports = earthToMars;
