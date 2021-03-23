@@ -48,13 +48,13 @@ setElements = () => {
             TweenMax.to('#fly'+ i, 0, { x: "-100vw", y: "-100vw" })    
         }
         else if ( flys[i - 1].x <= windowWidthHalf && flys[i - 1].y > windowHeightHalf ){
-            TweenMax.to('#fly'+ i, 0, { x: "-100vw", y: "100vw" })    
+            TweenMax.to('#fly'+ i, 0, { x: "-100vw", y: "100vw", rotation: -90 })    
         }
         else if ( flys[i - 1].x > windowWidthHalf && flys[i - 1].y <= windowHeightHalf){
-            TweenMax.to('#fly'+ i, 0, { x: "100vw", y: "-100vw" })    
+            TweenMax.to('#fly'+ i, 0, { x: "100vw", y: "-100vw", rotation: 90 })    
         }
         else if ( flys[i - 1].x > windowWidthHalf && flys[i - 1].y > windowHeightHalf){
-            TweenMax.to('#fly'+ i, 0, { x: "100vw", y: "100vw" })    
+            TweenMax.to('#fly'+ i, 0, { x: "100vw", y: "100vw", rotation: 180 })    
         }
     }
     moveElements()
