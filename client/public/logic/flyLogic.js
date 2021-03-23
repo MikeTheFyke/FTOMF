@@ -12,12 +12,14 @@ var randomX;
 
 var randomSpeed;
 var randomDelay;
+var randomScale;
 
-var numberOfFlys = Math.floor(Math.random() * 100) + 5;
+var numberOfFlys = Math.floor(Math.random() * (100 - 20 + 1) + 20);
 
 var flys = [];
 
 createElements = () => {
+    console.log("NumberOfFlys : " + numberOfFlys)
     for (var i = 1; i <= numberOfFlys; i ++){
         randomYValue = Math.floor(Math.random() * (windowHeight - 10)) + 10;
         randomY = randomYValue + "px";
@@ -37,13 +39,13 @@ createElements = () => {
             })
         randomY = "";
     }
-    console.log(flys)
     setElements()
 }
 
 setElements = () => {
     for (var i = 1; i <= numberOfFlys; i ++){
-        console.log(flys[i - 1].x)
+        randomScale = (Math.floor(Math.random() * (20 - 10 + 1) + 10)) / 10;
+        console.log(randomScale)
         if ( flys[i - 1].x <= windowWidthHalf && flys[i - 1].y <= windowHeightHalf ){
             TweenMax.to('#fly'+ i, 0, { x: "-100vw", y: "-100vw" })    
         }
