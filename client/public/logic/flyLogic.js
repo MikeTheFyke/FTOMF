@@ -9,7 +9,7 @@ var randomX;
 
 var flys = [];
 
-createElement = () => {
+createElements = () => {
     for (var i = 1; i <= 5; i ++){
         randomYValue = Math.floor(Math.random() * (windowHeight - 10)) + 10;
         randomY = randomYValue + "px";
@@ -30,20 +30,21 @@ createElement = () => {
         randomY = "";
     }
     console.log(flys)
-    setElement()
+    setElements()
 }
 
-setElement = () => {
+setElements = () => {
     for (var i = 1; i <= 5; i ++){
+        console.log(flys[i - 1].x)
         TweenMax.to('#fly'+ i, 0, { x: "-100vw" })    
     }
+    moveElements()
+}
+
+moveElements = () => {
     for (var i = 1; i <= 5; i ++){
         TweenMax.to('#fly'+ i, 2, { x: 0, delay: 1 })    
     }
 }
 
-TweenMax.to('#flyImage', 0, { x: "-100vw" })
-
-TweenMax.to('#flyImage', 4, { x: 0, delay: 1 })
-
-createElement()
+createElements()
