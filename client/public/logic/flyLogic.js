@@ -12,10 +12,12 @@ var randomX;
 
 var randomSpeed;
 
+var numberOfFlys = 20;
+
 var flys = [];
 
 createElements = () => {
-    for (var i = 1; i <= 5; i ++){
+    for (var i = 1; i <= numberOfFlys; i ++){
         randomYValue = Math.floor(Math.random() * (windowHeight - 10)) + 10;
         randomY = randomYValue + "px";
         randomXValue = Math.floor(Math.random() * (windowWidth - 10)) + 10;
@@ -39,7 +41,7 @@ createElements = () => {
 }
 
 setElements = () => {
-    for (var i = 1; i <= 5; i ++){
+    for (var i = 1; i <= numberOfFlys; i ++){
         console.log(flys[i - 1].x)
         if ( flys[i - 1].x <= windowWidthHalf && flys[i - 1].y <= windowHeightHalf ){
             TweenMax.to('#fly'+ i, 0, { x: "-100vw", y: "-100vw" })    
@@ -58,7 +60,7 @@ setElements = () => {
 }
 
 moveElements = () => {
-    for (var i = 1; i <= 5; i ++){
+    for (var i = 1; i <= numberOfFlys; i ++){
         randomSpeed = Math.floor(Math.random() * 4) + 1;
         TweenMax.to('#fly'+ i, randomSpeed, { x: 0, y: 0, delay: 1 })    
     }
