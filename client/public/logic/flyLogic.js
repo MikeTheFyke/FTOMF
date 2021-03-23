@@ -15,6 +15,8 @@ var randomDelay;
 var randomScale;
 var randomShadowScale;
 
+var clickedFly;
+
 var numberOfFlys = Math.floor(Math.random() * (200 - 50 + 1) + 50);
 
 var flys = [];
@@ -34,10 +36,18 @@ createElements = () => {
             newFly.style.position = 'absolute';
             newFly.style.left = randomX;
             newFly.style.top = randomY;
+            newFly.onclick = flyAway = (e) => {
+                e = e || window.event;
+                e = e.target || e.srcElement;
+                console.log(e.id)
+                clickedFly = e.id;
+                TweenMax.to("#" + clickedFly, 2, { x: "-100vw", y: 0, scaleX : 1, scaleY: 1 })
+
+            }
 
             var newShadow = document.createElement('div');
             newShadow.setAttribute("id", "shadow"+ [i]);
-            newShadow.style.background = '#000000';
+            newShadow.style.background = '#ffffff';
             newShadow.style.position = 'absolute';
             newShadow.style.width = '30px';
             newShadow.style.height = '30px';
@@ -94,7 +104,7 @@ moveElements = () => {
         randomSpeed = (Math.floor(Math.random() * (5 - 1 + 1) + 1))
         randomDelay = Math.floor(Math.random() * 4) + 1;
         TweenMax.to('#fly'+ i, randomSpeed, { x: 0, y: 0, delay: randomDelay, scaleX : 1, scaleY: 1 })    
-        TweenMax.to('#shadow'+ i, randomSpeed, { x: 0, y: 0, delay: randomDelay, scaleX : 0.75, scaleY: 0.75, opacity: 0.75 })    
+        TweenMax.to('#shadow'+ i, randomSpeed, { x: 0, y: 0, delay: randomDelay, scaleX : 0.5, scaleY: 0.5, opacity: 0.75, backgroundColor: "black" })    
     }  
 }
 
