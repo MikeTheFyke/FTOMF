@@ -10,6 +10,8 @@ var randomY;
 var randomXValue;
 var randomX;
 
+var randomSpeed;
+
 var flys = [];
 
 createElements = () => {
@@ -57,7 +59,8 @@ setElements = () => {
 
 moveElements = () => {
     for (var i = 1; i <= 5; i ++){
-        TweenMax.to('#fly'+ i, 2, { x: 0, y: 0, delay: 1 })    
+        randomSpeed = Math.floor(Math.random() * 4) + 1;
+        TweenMax.to('#fly'+ i, randomSpeed, { x: 0, y: 0, delay: 1 })    
     }
 }
 
