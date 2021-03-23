@@ -12,7 +12,7 @@ var randomX;
 
 var randomSpeed;
 
-var numberOfFlys = 20;
+var numberOfFlys = Math.floor(Math.random() * 100) + 5;
 
 var flys = [];
 
