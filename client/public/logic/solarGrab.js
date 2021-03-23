@@ -12,7 +12,6 @@ request('https://theskylive.com/mars-tracker', (error, response, html) => {
     console.log("Earth To Mars : " + earthMarsDistance);
   }
 });
-
 }
 
 module.exports = earthToMars;
