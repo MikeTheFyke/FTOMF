@@ -36,6 +36,11 @@ app.get("/solar", (req, res) => {
   res.render("solar");
 });
 
+/// Fly Route
+app.get("/fly", (req, res) => {
+  res.render("fly");
+});
+
 app.listen(PORT, () => {
   console.log(`Example app listening on port ${PORT}!`);
 });
