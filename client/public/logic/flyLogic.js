@@ -71,19 +71,19 @@ setElements = () => {
         console.log(randomShadowScale)
         if ( flys[i - 1].x <= windowWidthHalf && flys[i - 1].y <= windowHeightHalf ){
             TweenMax.to('#fly'+ i, 0, { x: "-100vw", y: "-100vw", scaleX: randomScale, scaleY: randomScale })    
-            TweenMax.to('#shadow'+ i, 0, { x: "-100vw", y: "-100vw", scaleX: randomShadowScale, scaleY: randomShadowScale })  
+            TweenMax.to('#shadow'+ i, 0, { x: "-70vw", y: "-100vw", scaleX: randomShadowScale, scaleY: randomShadowScale })  
         }
         else if ( flys[i - 1].x <= windowWidthHalf && flys[i - 1].y > windowHeightHalf ){
             TweenMax.to('#fly'+ i, 0, { x: "-100vw", y: "100vw", rotation: -90, scaleX: randomScale, scaleY: randomScale })    
-            TweenMax.to('#shadow'+ i, 0, { x: "-100vw", y: "100vw", rotation: -90, scaleX: randomShadowScale, scaleY: randomShadowScale })    
+            TweenMax.to('#shadow'+ i, 0, { x: "-70vw", y: "100vw", rotation: -90, scaleX: randomShadowScale, scaleY: randomShadowScale })    
         }
         else if ( flys[i - 1].x > windowWidthHalf && flys[i - 1].y <= windowHeightHalf){
             TweenMax.to('#fly'+ i, 0, { x: "100vw", y: "-100vw", rotation: 90, scaleX: randomScale, scaleY: randomScale })    
-            TweenMax.to('#shadow'+ i, 0, { x: "100vw", y: "-100vw", rotation: 90, scaleX: randomShadowScale, scaleY: randomShadowScale })    
+            TweenMax.to('#shadow'+ i, 0, { x: "70vw", y: "-100vw", rotation: 90, scaleX: randomShadowScale, scaleY: randomShadowScale })    
         }
         else if ( flys[i - 1].x > windowWidthHalf && flys[i - 1].y > windowHeightHalf){
             TweenMax.to('#fly'+ i, 0, { x: "100vw", y: "100vw", rotation: 180, scaleX: randomScale, scaleY: randomScale })    
-            TweenMax.to('#shadow'+ i, 0, { x: "100vw", y: "100vw", rotation: 180, scaleX: randomShadowScale, scaleY: randomShadowScale })    
+            TweenMax.to('#shadow'+ i, 0, { x: "70vw", y: "100vw", rotation: 180, scaleX: (randomShadowScale), scaleY: randomShadowScale })    
         }
     }
     moveElements()
@@ -91,10 +91,10 @@ setElements = () => {
 
 moveElements = () => {
     for (var i = 1; i <= numberOfFlys; i ++){
-        randomSpeed = Math.floor(Math.random() * 4) + 1;
+        randomSpeed = (Math.floor(Math.random() * (5 - 1 + 1) + 1))
         randomDelay = Math.floor(Math.random() * 4) + 1;
         TweenMax.to('#fly'+ i, randomSpeed, { x: 0, y: 0, delay: randomDelay, scaleX : 1, scaleY: 1 })    
-        TweenMax.to('#shadow'+ i, randomSpeed, { x: 0, y: 0, delay: randomDelay, scaleX : 1, scaleY: 1 })    
+        TweenMax.to('#shadow'+ i, randomSpeed, { x: 0, y: 0, delay: randomDelay, scaleX : 0.75, scaleY: 0.75, opacity: 0.75 })    
     }  
 }
 
