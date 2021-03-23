@@ -1,6 +1,9 @@
 var windowHeight = window.innerHeight;
 var windowWidth = window.innerWidth;
 
+var windowWidthHalf = window.innerWidth / 2;
+var windowHeightHalf = window.innerHeight / 2;
+
 var randomYValue;
 var randomY;
 
@@ -36,7 +39,12 @@ createElements = () => {
 setElements = () => {
     for (var i = 1; i <= 5; i ++){
         console.log(flys[i - 1].x)
-        TweenMax.to('#fly'+ i, 0, { x: "-100vw" })    
+        if ( flys[i - 1].x <= windowWidthHalf ){
+            TweenMax.to('#fly'+ i, 0, { x: "-100vw" })    
+        }
+        else if ( flys[i - 1].x > windowWidthHalf ){
+            TweenMax.to('#fly'+ i, 0, { x: "100vw" })    
+        }
     }
     moveElements()
 }
