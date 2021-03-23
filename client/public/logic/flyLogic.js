@@ -41,21 +41,23 @@ createElements = () => {
             newShadow.style.width = '30px';
             newShadow.style.height = '30px';
             newShadow.style.borderRadius = '20px';
-            newShadow.style.left = randomX;
-            newShadow.style.top = randomY;
+            newShadow.style.opacity = "0.5"
+            newShadow.style.left = randomXValue + 10 + 'px';
+            newShadow.style.top = randomYValue + 10 + 'px';
 
-                document.getElementById("flyViewContainer").appendChild(newShadow);
-                document.getElementById("flyViewContainer").appendChild(newFly);
-                    flys.push({
-                        id: i,
-                        x: randomXValue,
-                        y: randomYValue
-                    })
-                    shadows.push({
-                        id: i,
-                        x: randomXValue,
-                        y: randomYValue
-                    })
+            document.getElementById("flyViewContainer").appendChild(newShadow);
+            document.getElementById("flyViewContainer").appendChild(newFly);
+
+            flys.push({
+                id: i,
+                x: randomXValue,
+                y: randomYValue
+            })
+            shadows.push({
+                id: i,
+                x: randomXValue,
+                y: randomYValue
+            })
         randomY = "";
     }
     setElements()
