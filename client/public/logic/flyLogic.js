@@ -34,7 +34,12 @@ createElement = () => {
 }
 
 setElement = () => {
-    TweenMax.to('#fly1', 0, { x: "-100vw" })    
+    for (var i = 1; i <= 5; i ++){
+        TweenMax.to('#fly'+ i, 0, { x: "-100vw" })    
+    }
+    for (var i = 1; i <= 5; i ++){
+        TweenMax.to('#fly'+ i, 2, { x: 0, delay: 1 })    
+    }
 }
 
 TweenMax.to('#flyImage', 0, { x: "-100vw" })
