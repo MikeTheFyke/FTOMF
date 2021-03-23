@@ -39,11 +39,17 @@ createElements = () => {
 setElements = () => {
     for (var i = 1; i <= 5; i ++){
         console.log(flys[i - 1].x)
-        if ( flys[i - 1].x <= windowWidthHalf ){
-            TweenMax.to('#fly'+ i, 0, { x: "-100vw" })    
+        if ( flys[i - 1].x <= windowWidthHalf && flys[i - 1].y <= windowHeightHalf ){
+            TweenMax.to('#fly'+ i, 0, { x: "-100vw", y: "-100vw" })    
         }
-        else if ( flys[i - 1].x > windowWidthHalf ){
-            TweenMax.to('#fly'+ i, 0, { x: "100vw" })    
+        else if ( flys[i - 1].x <= windowWidthHalf && flys[i - 1].y > windowHeightHalf ){
+            TweenMax.to('#fly'+ i, 0, { x: "-100vw", y: "100vw" })    
+        }
+        else if ( flys[i - 1].x > windowWidthHalf && flys[i - 1].y <= windowHeightHalf){
+            TweenMax.to('#fly'+ i, 0, { x: "100vw", y: "-100vw" })    
+        }
+        else if ( flys[i - 1].x > windowWidthHalf && flys[i - 1].y > windowHeightHalf){
+            TweenMax.to('#fly'+ i, 0, { x: "100vw", y: "100vw" })    
         }
     }
     moveElements()
@@ -51,7 +57,7 @@ setElements = () => {
 
 moveElements = () => {
     for (var i = 1; i <= 5; i ++){
-        TweenMax.to('#fly'+ i, 2, { x: 0, delay: 1 })    
+        TweenMax.to('#fly'+ i, 2, { x: 0, y: 0, delay: 1 })    
     }
 }
 
