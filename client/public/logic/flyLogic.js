@@ -40,10 +40,17 @@ createElements = () => {
             newFly.style.top = randomY;
             newFly.onclick = flyAway = (e) => {
                 e = e || window.event;
+
+                clickedX = e.clientX;
+                clickedY = e.clientY;
+
                 e = e.target || e.srcElement;
                 console.log(e.id)
                 clickedFly = e.id;
+                clickedShadow = clickedFly.slice(3)
+                console.log(clickedShadow)
                 TweenMax.to("#" + clickedFly, 2, { x: "-100vw", y: 0, scaleX : 1, scaleY: 1 })
+
 
             }
 
@@ -80,7 +87,7 @@ setElements = () => {
     for (var i = 1; i <= numberOfFlys; i ++){
         randomScale = (Math.floor(Math.random() * (90 - 40 + 1) + 40)) / 10;
         randomShadowScale = randomScale / 10
-        console.log(randomShadowScale)
+        // console.log(randomShadowScale)
         if ( flys[i - 1].x <= windowWidthHalf && flys[i - 1].y <= windowHeightHalf ){
             TweenMax.to('#fly'+ i, 0, { x: "-100vw", y: "-100vw", scaleX: randomScale, scaleY: randomScale })    
             TweenMax.to('#shadow'+ i, 0, { x: "-70vw", y: "-100vw", scaleX: randomShadowScale, scaleY: randomShadowScale })  
