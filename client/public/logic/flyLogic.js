@@ -19,6 +19,13 @@ var clickedFly;
 var clickedX;
 var clickedY;
 
+var squashedFlyRadius = 20;
+var squashedFlyX;
+var squashedFlyY;
+
+var fleeFlyX;
+var fleeFlyY;
+
 var numberOfFlys = Math.floor(Math.random() * (200 - 50 + 1) + 50);
 
 var flys = [];
@@ -38,19 +45,22 @@ createElements = () => {
             newFly.style.position = 'absolute';
             newFly.style.left = randomX;
             newFly.style.top = randomY;
-            newFly.onclick = flyAway = (e) => {
+            newFly.onclick = selectAway = (e) => {
                 e = e || window.event;
 
                 clickedX = e.clientX;
                 clickedY = e.clientY;
 
                 e = e.target || e.srcElement;
-                console.log(e.id)
+
                 clickedFly = e.id;
                 clickedShadow = "shadow" + clickedFly.slice(3)
+
+                flyAway(clickedFly)
+
+                console.log("ClickedFly : " + clickedFly.slice(3))
                 TweenMax.to("#" + clickedFly, 2, { x: "-100vw", y: 0, scaleX : 1, scaleY: 1 })
                 TweenMax.to("#" + clickedShadow, 1.9, { x: "-100vw", y: 0, scaleX : 0.25, scaleY: 0.25, delay: 0.05 })
-
             }
 
             var newShadow = document.createElement('div');
@@ -114,6 +124,21 @@ moveElements = () => {
         TweenMax.to('#fly'+ i, randomSpeed, { x: 0, y: 0, delay: randomDelay, scaleX : 1, scaleY: 1 })    
         TweenMax.to('#shadow'+ i, randomSpeed, { x: 0, y: 0, delay: randomDelay, scaleX : 0.5, scaleY: 0.5, opacity: 0.75, backgroundColor: "black" })    
     }  
+}
+
+flyAway = () => {
+    // console.log("New Clicked Fly : " + flys[clickedFly.slice(3)].x)
+    squashedFlyX = flys[clickedFly.slice(3)].x;
+    squashedFlyY = flys[clickedFly.slice(3)].y;
+
+    for (var j = 0; j < numberOfFlys; j ++ ){
+        fleeFlyX = squashedFlyX - (flys[j].x);
+        fleeFlyY = squashedFlyY - (flys[j].y);
+        if ( fleeFlyX <= squashedFlyRadius && fleeFlyY <= squashedFlyRadius ){
+            // TweenMax.to("#" + clickedFly, 2, { x: "-100vw", y: 0, scaleX : 1, scaleY: 1 })
+            TweenMax.to("#fly" + [j], 2, { x: "-100vw", y: 0, scaleX : 1, scaleY: 1 })
+        }
+    }
 }
 
 createElements()
