@@ -47,10 +47,9 @@ createElements = () => {
                 e = e.target || e.srcElement;
                 console.log(e.id)
                 clickedFly = e.id;
-                clickedShadow = clickedFly.slice(3)
-                console.log(clickedShadow)
+                clickedShadow = "shadow" + clickedFly.slice(3)
                 TweenMax.to("#" + clickedFly, 2, { x: "-100vw", y: 0, scaleX : 1, scaleY: 1 })
-
+                TweenMax.to("#" + clickedShadow, 1.9, { x: "-100vw", y: 0, scaleX : 0.25, scaleY: 0.25, delay: 0.05 })
 
             }
 
