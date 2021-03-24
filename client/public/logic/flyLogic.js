@@ -16,6 +16,8 @@ var randomScale;
 var randomShadowScale;
 
 var clickedFly;
+var clickedX;
+var clickedY;
 
 var numberOfFlys = Math.floor(Math.random() * (200 - 50 + 1) + 50);
 
