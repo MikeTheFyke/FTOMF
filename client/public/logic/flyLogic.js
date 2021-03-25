@@ -154,10 +154,10 @@ flyAway = () => {
         if ( fleeFlyX <= squashedFlyRadius && fleeFlyY <= squashedFlyRadius ){
             // TweenMax.to("#" + clickedFly, 2, { x: "-100vw", y: 0, scaleX : 1, scaleY: 1 })
             if (flys[j].x <= windowHeightHalf ){
-                TweenMax.to("#fly" + [j - 1], 2, { x: "-100vw", y: 0, scaleX : 1, scaleY: 1 })
+                TweenMax.to("#fly" + [j - 1], 2, { x: "-100vw", y: 0, scaleX : 1, scaleY: 1, rotation: 180 })
             }
             else if (flys[j].x > windowHeightHalf ){
-                TweenMax.to("#fly" + [j - 1], 2, { x: "100vw", y: 0, scaleX : 1, scaleY: 1 })
+                TweenMax.to("#fly" + [j - 1], 2, { x: "100vw", y: 0, scaleX : 1, scaleY: 1, rotation: 0 })
             }
         }
     }
