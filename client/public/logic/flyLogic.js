@@ -73,6 +73,7 @@ createElements = () => {
             newShadow.style.opacity = "0.5"
             newShadow.style.left = randomXValue + 10 + 'px';
             newShadow.style.top = randomYValue + 10 + 'px';
+            // newShadow.style.backgroundImage = 'radial-gradient (black, white)';
 
             document.getElementById("flyViewContainer").appendChild(newShadow);
             document.getElementById("flyViewContainer").appendChild(newFly);
