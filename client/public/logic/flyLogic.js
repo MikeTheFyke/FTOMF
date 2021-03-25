@@ -19,7 +19,7 @@ var clickedFly;
 var clickedX;
 var clickedY;
 
-var squashedFlyRadius = 20;
+var squashedFlyRadius = 100;
 var squashedFlyX;
 var squashedFlyY;
 
@@ -133,11 +133,32 @@ flyAway = () => {
     squashedFlyY = flys[clickedFly.slice(3)].y;
 
     for (var j = 0; j < numberOfFlys; j ++ ){
-        fleeFlyX = squashedFlyX - (flys[j].x);
-        fleeFlyY = squashedFlyY - (flys[j].y);
+        if ( squashedFlyX >= flys[j].x ){
+            fleeFlyX = squashedFlyX - (flys[j].x);
+            console.log("FleeFlyX : " + fleeFlyX)
+        } else if ( squashedFlyX < flys[j].x ){
+            fleeFlyX = (flys[j].x) - squashedFlyX;
+            console.log("FleeFlyX : " + fleeFlyX)
+        }
+
+        if ( squashedFlyY >= flys[j].y ){
+            fleeFlyY = squashedFlyY - (flys[j].y);
+            console.log("FleeFlyY : " + fleeFlyY)
+        } else if ( squashedFlyY < flys[j].y ){
+            fleeFlyY = (flys[j].y) - squashedFlyY;
+            console.log("FleeFlyY : " + fleeFlyY)
+        }
+
+        // fleeFlyX = squashedFlyX - (flys[j].x);
+        // fleeFlyY = squashedFlyY - (flys[j].y);
         if ( fleeFlyX <= squashedFlyRadius && fleeFlyY <= squashedFlyRadius ){
             // TweenMax.to("#" + clickedFly, 2, { x: "-100vw", y: 0, scaleX : 1, scaleY: 1 })
-            TweenMax.to("#fly" + [j], 2, { x: "-100vw", y: 0, scaleX : 1, scaleY: 1 })
+            if (flys[j].x <= windowHeightHalf ){
+                TweenMax.to("#fly" + [j - 1], 2, { x: "-100vw", y: 0, scaleX : 1, scaleY: 1 })
+            }
+            else if (flys[j].x > windowHeightHalf ){
+                TweenMax.to("#fly" + [j - 1], 2, { x: "100vw", y: 0, scaleX : 1, scaleY: 1 })
+            }
         }
     }
 }
