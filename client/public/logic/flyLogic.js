@@ -182,12 +182,12 @@ flyAway = () => {
         if ( fleeFlyX <= squashedFlyRadius || fleeFlyY <= squashedFlyRadius ){
             // TweenMax.to("#" + clickedFly, 2, { x: "-100vw", y: 0, scaleX : 1, scaleY: 1 })
             if (flys[j].x <= windowHeightHalf ){
-                TweenMax.to("#fly" + [j - 1], randomSpeed, { x: "-150vw", y: 0, scaleX : randomScale, scaleY: randomScale, rotation: 180 })
-                TweenMax.to("#shadow" + [j - 1], randomSpeed, { x: "-150vw", y: 0, scaleX : randomScale, scaleY: randomScale, rotation: 180 })
+                TweenMax.to("#fly" + [j], randomSpeed, { x: "-150vw", y: 0, scaleX : randomScale, scaleY: randomScale, rotation: 180 })
+                TweenMax.to("#shadow" + [j], randomSpeed, { x: "-150vw", y: 0, scaleX : randomScale, scaleY: randomScale, rotation: 180 })
             }
             else if (flys[j].x > windowHeightHalf ){
-                TweenMax.to("#fly" + [j - 1], randomSpeed, { x: "150vw", y: 0, scaleX : randomScale, scaleY: randomScale, rotation: 0 })
-                TweenMax.to("#shadow" + [j - 1], randomSpeed, { x: "150vw", y: 0, scaleX : randomScale, scaleY: randomScale, rotation: 0 })
+                TweenMax.to("#fly" + [j], randomSpeed, { x: "150vw", y: 0, scaleX : randomScale, scaleY: randomScale, rotation: 0 })
+                TweenMax.to("#shadow" + [j], randomSpeed, { x: "150vw", y: 0, scaleX : randomScale, scaleY: randomScale, rotation: 0 })
             }
         }
     }
