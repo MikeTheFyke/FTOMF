@@ -62,6 +62,15 @@ createElements = () => {
                 console.log("ClickedFly : " + clickedFly.slice(3))
                 TweenMax.to("#" + clickedFly, 2, { x: "-100vw", y: 0, scaleX : 1, scaleY: 1 })
                 TweenMax.to("#" + clickedShadow, 1.9, { x: "-100vw", y: 0, scaleX : 0.25, scaleY: 0.25, delay: 0.05 })
+
+                for (var k = flys.length - 1; k >= 0; --k) {
+                    if (flys[k].id == clickedFly.slice(3)) {
+                        flys[k].x = 0;
+                        flys[k].y = 0;
+                    }
+                    console.log(flys[k])
+                }
+
             }
 
             var newShadow = document.createElement('div');
