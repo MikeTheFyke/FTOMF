@@ -35,7 +35,7 @@ var shadows = [];
 
 createElements = () => {
     console.log("NumberOfFlys : " + numberOfFlys)
-    for (var i = 1; i <= numberOfFlys; i ++){
+    for (var i = 0; i <= numberOfFlys; i ++){
         randomYValue = Math.floor(Math.random() * (windowHeight - 10)) + 10;
         randomY = randomYValue + "px";
         randomXValue = Math.floor(Math.random() * (windowWidth - 10)) + 10;
@@ -105,23 +105,23 @@ createElements = () => {
 }
 
 setElements = () => {
-    for (var i = 1; i <= numberOfFlys; i ++){
+    for (var i = 0; i <= numberOfFlys; i ++){
         randomScale = (Math.floor(Math.random() * (90 - 40 + 1) + 40)) / 10;
         randomShadowScale = randomScale / 10
         // console.log(randomShadowScale)
-        if ( flys[i - 1].x <= windowWidthHalf && flys[i - 1].y <= windowHeightHalf ){
+        if ( flys[i].x <= windowWidthHalf && flys[i].y <= windowHeightHalf ){
             TweenMax.to('#fly'+ i, 0, { x: "-100vw", y: "-100vw", scaleX: randomScale, scaleY: randomScale })    
             TweenMax.to('#shadow'+ i, 0, { x: "-70vw", y: "-100vw", scaleX: randomShadowScale, scaleY: randomShadowScale })  
         }
-        else if ( flys[i - 1].x <= windowWidthHalf && flys[i - 1].y > windowHeightHalf ){
+        else if ( flys[i].x <= windowWidthHalf && flys[i].y > windowHeightHalf ){
             TweenMax.to('#fly'+ i, 0, { x: "-100vw", y: "100vw", rotation: -90, scaleX: randomScale, scaleY: randomScale })    
             TweenMax.to('#shadow'+ i, 0, { x: "-70vw", y: "100vw", rotation: -90, scaleX: randomShadowScale, scaleY: randomShadowScale })    
         }
-        else if ( flys[i - 1].x > windowWidthHalf && flys[i - 1].y <= windowHeightHalf){
+        else if ( flys[i].x > windowWidthHalf && flys[i].y <= windowHeightHalf){
             TweenMax.to('#fly'+ i, 0, { x: "100vw", y: "-100vw", rotation: 90, scaleX: randomScale, scaleY: randomScale })    
             TweenMax.to('#shadow'+ i, 0, { x: "70vw", y: "-100vw", rotation: 90, scaleX: randomShadowScale, scaleY: randomShadowScale })    
         }
-        else if ( flys[i - 1].x > windowWidthHalf && flys[i - 1].y > windowHeightHalf){
+        else if ( flys[i].x > windowWidthHalf && flys[i].y > windowHeightHalf){
             TweenMax.to('#fly'+ i, 0, { x: "100vw", y: "100vw", rotation: 180, scaleX: randomScale, scaleY: randomScale })    
             TweenMax.to('#shadow'+ i, 0, { x: "70vw", y: "100vw", rotation: 180, scaleX: (randomShadowScale), scaleY: randomShadowScale })    
         }
@@ -130,7 +130,7 @@ setElements = () => {
 }
 
 moveElements = () => {
-    for (var i = 1; i <= numberOfFlys; i ++){
+    for (var i = 0; i <= numberOfFlys; i ++){
         randomSpeed = (Math.floor(Math.random() * (5 - 1 + 1) + 1))
         randomDelay = Math.floor(Math.random() * 4) + 1;
         TweenMax.to('#fly'+ i, randomSpeed, { x: 0, y: 0, delay: randomDelay, scaleX : 1, scaleY: 1 })    
@@ -156,41 +156,43 @@ flyAway = () => {
             flys[k].x = 0;
             flys[k].y = 0;
         }
-        console.log(flys[k])
+        // console.log(flys[k])
     }
 
-    for (var j = 0; j < numberOfFlys; j ++ ){
+    for (var j = 0; j <= numberOfFlys; j ++ ){
         if ( squashedFlyX >= flys[j].x ){
             fleeFlyX = squashedFlyX - (flys[j].x);
-            console.log("FleeFlyX : " + fleeFlyX)
+            // console.log("FleeFlyX : " + fleeFlyX)
         } else if ( squashedFlyX < flys[j].x ){
             fleeFlyX = (flys[j].x) - squashedFlyX;
-            console.log("FleeFlyX : " + fleeFlyX)
+            // console.log("FleeFlyX : " + fleeFlyX)
         }
 
         if ( squashedFlyY >= flys[j].y ){
             fleeFlyY = squashedFlyY - (flys[j].y);
-            console.log("FleeFlyY : " + fleeFlyY)
+            // console.log("FleeFlyY : " + fleeFlyY)
         } else if ( squashedFlyY < flys[j].y ){
             fleeFlyY = (flys[j].y) - squashedFlyY;
-            console.log("FleeFlyY : " + fleeFlyY)
+            // console.log("FleeFlyY : " + fleeFlyY)
         }
 
         fleeFlyX = squashedFlyX - (flys[j].x);
         fleeFlyY = squashedFlyY - (flys[j].y);
 
-        if ( fleeFlyX <= squashedFlyRadius || fleeFlyY <= squashedFlyRadius ){
-            // TweenMax.to("#" + clickedFly, 2, { x: "-100vw", y: 0, scaleX : 1, scaleY: 1 })
-            if (flys[j].x <= windowHeightHalf ){
-                TweenMax.to("#fly" + [j], randomSpeed, { x: "-150vw", y: 0, scaleX : randomScale, scaleY: randomScale, rotation: 180 })
-                TweenMax.to("#shadow" + [j], randomSpeed, { x: "-150vw", y: 0, scaleX : randomScale, scaleY: randomScale, rotation: 180 })
-            }
-            else if (flys[j].x > windowHeightHalf ){
-                TweenMax.to("#fly" + [j], randomSpeed, { x: "150vw", y: 0, scaleX : randomScale, scaleY: randomScale, rotation: 0 })
-                TweenMax.to("#shadow" + [j], randomSpeed, { x: "150vw", y: 0, scaleX : randomScale, scaleY: randomScale, rotation: 0 })
-            }
-        }
-    }
+    //     if ( fleeFlyX <= squashedFlyRadius || fleeFlyY <= squashedFlyRadius ){
+    //         console.log("Flee Fly X : " + fleeFlyX)
+    //         console.log("Squashed Fly Radius : " + squashedFlyRadius)
+    //         // TweenMax.to("#" + clickedFly, 2, { x: "-100vw", y: 0, scaleX : 1, scaleY: 1 })
+    //         if (flys[j].x <= windowHeightHalf ){
+    //             TweenMax.to("#fly" + [j], randomSpeed, { x: "-150vw", y: 0, scaleX : randomScale, scaleY: randomScale, rotation: 180 })
+    //             TweenMax.to("#shadow" + [j], randomSpeed, { x: "-150vw", y: 0, scaleX : randomScale, scaleY: randomScale, rotation: 180 })
+    //         }
+    //         else if (flys[j].x > windowHeightHalf ){
+    //             TweenMax.to("#fly" + [j], randomSpeed, { x: "150vw", y: 0, scaleX : randomScale, scaleY: randomScale, rotation: 0 })
+    //             TweenMax.to("#shadow" + [j], randomSpeed, { x: "150vw", y: 0, scaleX : randomScale, scaleY: randomScale, rotation: 0 })
+    //         }
+    //     }
+    // }
 }
 
 createElements()
