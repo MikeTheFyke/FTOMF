@@ -60,8 +60,9 @@ createElements = () => {
                 // flyAway(clickedFly)
 
                 console.log("ClickedFly : " + clickedFly.slice(3))
-                TweenMax.to("#" + clickedFly, 2, { x: "-100vw", y: 0, scaleX : 1, scaleY: 1 })
-                TweenMax.to("#" + clickedShadow, 1.9, { x: "-100vw", y: 0, scaleX : 0.25, scaleY: 0.25, delay: 0.05 })
+                // TweenMax.to("#" + clickedFly, 2, { x: "-130vw", y: 0, scaleX : 4, scaleY: 4, zIndex: -3 })
+                TweenMax.to("#" + clickedFly, 1, { scaleX : 0.15, scaleY: 0.15, zIndex: -3 })
+                TweenMax.to("#" + clickedShadow, 1, {scaleX : 0.25, scaleY: 0.25, delay: 0.05, backgroundColor: "green" })
 
                 for (var k = flys.length - 1; k >= 0; --k) {
                     if (flys[k].id == clickedFly.slice(3)) {
