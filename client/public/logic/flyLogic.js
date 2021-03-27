@@ -92,7 +92,9 @@ createElements = () => {
             flys.push({
                 id: i,
                 x: randomXValue,
-                y: randomYValue
+                y: randomYValue,
+                flee: false,
+                squashed: false
             })
             shadows.push({
                 id: i,
@@ -156,28 +158,28 @@ flyAway = () => {
             flys[k].x = 0;
             flys[k].y = 0;
         }
-        // console.log(flys[k])
+        console.log("Clicked Fly : " + flys[k])
     }
 
-    for (var j = 0; j <= numberOfFlys; j ++ ){
-        if ( squashedFlyX >= flys[j].x ){
-            fleeFlyX = squashedFlyX - (flys[j].x);
-            // console.log("FleeFlyX : " + fleeFlyX)
-        } else if ( squashedFlyX < flys[j].x ){
-            fleeFlyX = (flys[j].x) - squashedFlyX;
-            // console.log("FleeFlyX : " + fleeFlyX)
-        }
+    // for (var j = 0; j <= numberOfFlys; j ++ ){
+    //     if ( squashedFlyX >= flys[j].x ){
+    //         fleeFlyX = squashedFlyX - (flys[j].x);
+    //         // console.log("FleeFlyX : " + fleeFlyX)
+    //     } else if ( squashedFlyX < flys[j].x ){
+    //         fleeFlyX = (flys[j].x) - squashedFlyX;
+    //         // console.log("FleeFlyX : " + fleeFlyX)
+    //     }
 
-        if ( squashedFlyY >= flys[j].y ){
-            fleeFlyY = squashedFlyY - (flys[j].y);
-            // console.log("FleeFlyY : " + fleeFlyY)
-        } else if ( squashedFlyY < flys[j].y ){
-            fleeFlyY = (flys[j].y) - squashedFlyY;
-            // console.log("FleeFlyY : " + fleeFlyY)
-        }
+    //     if ( squashedFlyY >= flys[j].y ){
+    //         fleeFlyY = squashedFlyY - (flys[j].y);
+    //         // console.log("FleeFlyY : " + fleeFlyY)
+    //     } else if ( squashedFlyY < flys[j].y ){
+    //         fleeFlyY = (flys[j].y) - squashedFlyY;
+    //         // console.log("FleeFlyY : " + fleeFlyY)
+    //     }
 
-        fleeFlyX = squashedFlyX - (flys[j].x);
-        fleeFlyY = squashedFlyY - (flys[j].y);
+    //     fleeFlyX = squashedFlyX - (flys[j].x);
+    //     fleeFlyY = squashedFlyY - (flys[j].y);
 
     //     if ( fleeFlyX <= squashedFlyRadius || fleeFlyY <= squashedFlyRadius ){
     //         console.log("Flee Fly X : " + fleeFlyX)
