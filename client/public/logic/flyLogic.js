@@ -102,6 +102,8 @@ createElements = () => {
                 y: randomYValue
             })
         randomY = "";
+
+        console.log("Fly ID : " + flys[i].id + " - X : " + flys[i].x + " - Y : " + flys[i].y)
     }
     setElements()
 }
@@ -169,7 +171,7 @@ flyAway = () => {
         }
         
         if ( squashedFlyX >= flys[k].x ){
-            fleeFlyX = squashedFlyX - (flys[k].x);
+            fleeFlyX = squashedFlyX - flys[k].x;
             if ( fleeFlyX <= squashedFlyRadius && flys[k].flee === false && flys[k].squashed === false){
                 flys[k].flee = true;
                 TweenMax.to("#fly" + [k], randomSpeed, { x: "-150vw", y: 0, scaleX : randomScale, scaleY: randomScale, rotation: 180 })
