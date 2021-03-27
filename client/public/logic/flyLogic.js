@@ -144,8 +144,8 @@ flyAway = () => {
     randomScale = (Math.floor(Math.random() * (50 - 20 + 1) + 20)) / 10;
     randomSpeed = (Math.floor(Math.random() * (5 - 1 + 1) + 1))
     // console.log("New Clicked Fly : " + flys[clickedFly.slice(3)].x)
-    squashedFlyX = flys[(clickedFly.slice(3)-1)].x;
-    squashedFlyY = flys[(clickedFly.slice(3)-1)].y;
+    // squashedFlyX = flys[(clickedFly.slice(3)-1)].x;
+    // squashedFlyY = flys[(clickedFly.slice(3)-1)].y;
 
     TweenMax.to("#" + clickedFly, 1, { scaleX : 0.15, scaleY: 0.15, zIndex: -3 })
     TweenMax.to("#" + clickedShadow, 1, {scaleX : 0.25, scaleY: 0.25, delay: 0.05, backgroundColor: "green" })
@@ -155,10 +155,25 @@ flyAway = () => {
 
     for (var k = flys.length - 1; k >= 0; --k) {
         if (flys[k].id == clickedFly.slice(3)) {
+            squashedFlyX = flys[(clickedFly.slice(3)-1)].x;
+            squashedFlyY = flys[(clickedFly.slice(3)-1)].y;
+            console.log("Squashed Fly X : " + squashedFlyX)
+            console.log("Squashed Fly Y : " + squashedFlyY)
             flys[k].x = 0;
             flys[k].y = 0;
+            flys[k].squashed = true;
+            console.log("Clicked Fly : " + flys[k].id)
         }
-        console.log("Clicked Fly : " + flys[k])
+        
+        if ( squashedFlyX >= flys[k].x ){
+            fleeFlyX = squashedFlyX - (flys[k].x);
+            
+            // console.log("FleeFlyX : " + fleeFlyX)
+        } else if ( squashedFlyX < flys[k].x ){
+            fleeFlyX = (flys[k].x) - squashedFlyX;
+            
+            // console.log("FleeFlyX : " + fleeFlyX)
+        }
     }
 
     // for (var j = 0; j <= numberOfFlys; j ++ ){
