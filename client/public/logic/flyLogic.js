@@ -167,11 +167,21 @@ flyAway = () => {
         
         if ( squashedFlyX >= flys[k].x ){
             fleeFlyX = squashedFlyX - (flys[k].x);
-            
+            if ( fleeFlyX <= squashedFlyRadius ){
+                flys[k].flee = true;
+                TweenMax.to("#fly" + [k], randomSpeed, { x: "-150vw", y: 0, scaleX : randomScale, scaleY: randomScale, rotation: 180 })
+                TweenMax.to("#shadow" + [k], randomSpeed, { x: "-150vw", y: 0, scaleX : randomScale, scaleY: randomScale, rotation: 180 })
+                console.log("Flee Fly ID : " + flys[k].id + " X : " + flys[k].x + " FleeFlyX : " + fleeFlyX )
+            }
             // console.log("FleeFlyX : " + fleeFlyX)
         } else if ( squashedFlyX < flys[k].x ){
             fleeFlyX = (flys[k].x) - squashedFlyX;
-            
+            if ( fleeFlyX <= squashedFlyRadius ){
+                flys[k].flee = true;
+                TweenMax.to("#fly" + [k], randomSpeed, { x: "-150vw", y: 0, scaleX : randomScale, scaleY: randomScale, rotation: 180 })
+                TweenMax.to("#shadow" + [k], randomSpeed, { x: "-150vw", y: 0, scaleX : randomScale, scaleY: randomScale, rotation: 180 })
+                console.log("Flee Fly ID : " + flys[k].id + " X : " + flys[k].x + " FleeFlyX : " + fleeFlyX )
+            }
             // console.log("FleeFlyX : " + fleeFlyX)
         }
     }
