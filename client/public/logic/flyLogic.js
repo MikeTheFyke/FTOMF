@@ -28,7 +28,8 @@ var fleeFlyX;
 var fleeFlyY;
 
 // var numberOfFlys = Math.floor(Math.random() * (200 - 50 + 1) + 50);
-var numberOfFlys = 4;
+var numberOfFlys = Math.floor(Math.random() * (20 - 10 + 1) + 10);
+// var numberOfFlys = 4;
 
 var flys = [];
 var shadows = [];
