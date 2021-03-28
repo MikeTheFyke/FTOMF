@@ -176,8 +176,9 @@ flyAway = () => {
             fleeFlyY = squashedFlyY - flys[k].y;
             if ( fleeFlyX <= squashedFlyRadius && fleeFlyY <= squashedFlyRadius && flys[k].flee === false && flys[k].squashed === false){
                 flys[k].flee = true;
-                TweenMax.to("#fly" + [k], randomSpeed, { x: "-150vw", y: 0, scaleX : randomScale, scaleY: randomScale, rotation: 180 })
-                TweenMax.to("#shadow" + [k], randomSpeed, { x: "-150vw", y: 0, scaleX : randomScale, scaleY: randomScale, delay: 0.15 })
+                TweenMax.to("#fly" + [k], 0.25, { rotation: 180 })
+                TweenMax.to("#fly" + [k], randomSpeed, { x: "-150vw", y: 0, scaleX : randomScale, scaleY: randomScale, delay: 0.5 })
+                TweenMax.to("#shadow" + [k], randomSpeed, { x: "-150vw", y: 0, scaleX : randomScale, scaleY: randomScale, delay: 0.65 })
                 console.log("Flee Fly ID : " + flys[k].id + " X : " + flys[k].x + " FleeFlyX : " + fleeFlyX )
             }
             // console.log("FleeFlyX : " + fleeFlyX)
@@ -186,8 +187,9 @@ flyAway = () => {
             fleeFlyY = (flys[k].y) - squashedFlyY;
             if ( fleeFlyX <= squashedFlyRadius && fleeFlyY <= squashedFlyRadius && flys[k].flee === false && flys[k].squashed === false){
                 flys[k].flee = true;
-                TweenMax.to("#fly" + [k], randomSpeed, { x: "-150vw", y: 0, scaleX : randomScale, scaleY: randomScale, rotation: 180 })
-                TweenMax.to("#shadow" + [k], randomSpeed, { x: "-150vw", y: 0, scaleX : randomScale, scaleY: randomScale, delay: 0.15 })
+                TweenMax.to("#fly" + [k], 0.25, { rotation: 180 })
+                TweenMax.to("#fly" + [k], randomSpeed, { x: "-150vw", y: 0, scaleX : randomScale, scaleY: randomScale, delay: 0.5 })
+                TweenMax.to("#shadow" + [k], randomSpeed, { x: "-150vw", y: 0, scaleX : randomScale, scaleY: randomScale, delay: 0.65 })
                 console.log("Flee Fly ID : " + flys[k].id + " X : " + flys[k].x + " FleeFlyX : " + fleeFlyX )
             }
             // console.log("FleeFlyX : " + fleeFlyX)
