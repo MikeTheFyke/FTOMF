@@ -27,8 +27,8 @@ var squashedFlyY;
 var fleeFlyX;
 var fleeFlyY;
 
-var numberOfFlys = Math.floor(Math.random() * (200 - 50 + 1) + 50);
-// var numberOfFlys = 4;
+// var numberOfFlys = Math.floor(Math.random() * (200 - 50 + 1) + 50);
+var numberOfFlys = 4;
 
 var flys = [];
 var shadows = [];
@@ -160,8 +160,8 @@ flyAway = () => {
 
     for (var k = flys.length - 1; k >= 0; --k) {
         if (flys[k].id == clickedFly.slice(3)) {
-            squashedFlyX = flys[(clickedFly.slice(3)-1)].x;
-            squashedFlyY = flys[(clickedFly.slice(3)-1)].y;
+            squashedFlyX = flys[clickedFly.slice(3)].x;
+            squashedFlyY = flys[clickedFly.slice(3)].y;
             console.log("Squashed Fly X : " + squashedFlyX)
             console.log("Squashed Fly Y : " + squashedFlyY)
             flys[k].x = 0;
