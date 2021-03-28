@@ -171,7 +171,7 @@ flyAway = () => {
             console.log("Clicked Fly : " + flys[k].id)
         }
         
-        if ( squashedFlyX >= flys[k].x ){
+        if ( squashedFlyX >= flys[k].x && squashedFlyY >= flys[k].y ){
             fleeFlyX = squashedFlyX - flys[k].x;
             fleeFlyY = squashedFlyY - flys[k].y;
             if ( fleeFlyX <= squashedFlyRadius && fleeFlyY <= squashedFlyRadius && flys[k].flee === false && flys[k].squashed === false){
@@ -182,7 +182,7 @@ flyAway = () => {
                 console.log("Flee Fly ID : " + flys[k].id + " X : " + flys[k].x + " Y : " + flys[k].y +  " FleeFlyX : " + fleeFlyX + " FleeFlyY : " + fleeFlyY)
             }
             // console.log("FleeFlyX : " + fleeFlyX)
-        } else if ( squashedFlyX < flys[k].x ){
+        } else if ( squashedFlyX < flys[k].x && squashedFlyY < flys[k].y ){
             fleeFlyX = (flys[k].x) - squashedFlyX;
             fleeFlyY = (flys[k].y) - squashedFlyY;
             if ( fleeFlyX <= squashedFlyRadius && fleeFlyY <= squashedFlyRadius && flys[k].flee === false && flys[k].squashed === false){
