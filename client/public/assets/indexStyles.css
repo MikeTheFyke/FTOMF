@@ -45,6 +45,14 @@
     text-align: center;
 }
 
+#header-element5{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background-image: linear-gradient(#25a84c, black);
+    text-align: center;
+}
+
 .header-link{
     color: white;
     font-size: 15px;
@@ -88,6 +96,13 @@
 }
 
 #foot-shadow4{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background-image: radial-gradient(black, black, white, white);
+}
+
+#foot-shadow5{
     width: 100px;
     height: 100px;
     border-radius: 50px;
