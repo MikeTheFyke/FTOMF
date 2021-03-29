@@ -4,6 +4,9 @@
 }
 
 #sprite{
+    position: absolute;
+    bottom: 20px;
+    left: 45%;
     width: 100px;
     height: 100px;
     background-color: lightskyblue;
