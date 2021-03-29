@@ -41,6 +41,11 @@ app.get("/fly", (req, res) => {
   res.render("fly");
 });
 
+/// Walk Route
+app.get("/walk", (req, res) => {
+  res.render("walk");
+});
+
 app.listen(PORT, () => {
   console.log(`Example app listening on port ${PORT}!`);
 });
